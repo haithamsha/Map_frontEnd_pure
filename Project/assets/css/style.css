@@ -1,0 +1,19 @@
+:root {
+    --red: #A20611;
+    --blue: #3788BF;
+    --badge-bg:#DEE3ED;
+    --light-gray:#F9F9FB;
+    --gray-6:#F2F2F2;
+  }
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/Englsih/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Englsih/inter/Inter-VariableFont_slnt\,wght.ttf);
+} 
+
+
+

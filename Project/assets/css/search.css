@@ -1,0 +1,79 @@
+.banner-intro h1
+{
+    left: calc(50% - 305px);
+}
+#search-filters{
+    padding: 75px 250px;
+    background-color: var(--light-gray);
+}
+.banner-intro{
+    height: auto !important;
+}
+#search-filters-widgets{
+    width: 960px;
+    margin: 0 auto;
+}
+#search-section{
+    position: initial;
+    margin: 0 auto;
+}
+#more-search-section h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 42px;
+}
+#more-search-section{
+    width: 960px;
+    margin: 60px auto;
+
+}
+#more-search-section .search-lbl{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    max-width: 125px;
+}
+#reset-div{
+    text-align: center;
+    margin-top: 25px;
+}
+#reset-div a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#search-result-section{
+    background-color: white;
+    padding: 130px 250px;
+
+}
+#search-result-header{
+    max-width: 960px;
+    margin: 0 auto;
+}
+#search-result-section h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+   position: relative;
+}
+#search-result-section #result-count{
+    font-size: 14px;
+    margin-bottom: 0px;
+    position: absolute;
+    right: -35px;
+    bottom: -5px;
+}
+#search-result-categories{
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 50px;
+}

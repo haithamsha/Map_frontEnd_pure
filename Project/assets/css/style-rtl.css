@@ -1,0 +1,10 @@
+.banner-intro h1{
+    right: calc(50% - 192px);
+}
+#search-section .input-group-text{
+    border-left: 0px;
+    border-right:1px solid #ced4da;
+}
+#search-section #search-txt{
+    border-right: 0px;
+}

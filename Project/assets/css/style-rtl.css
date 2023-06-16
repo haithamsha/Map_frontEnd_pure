@@ -1,3 +1,7 @@
+@font-face {
+    font-family: dinregular;
+    src: url(../fonts/Arabic/din-next-lt-w23-regular.ttf);
+}
 .banner-intro h1{
     right: calc(50% - 192px);
 }
@@ -7,4 +11,23 @@
 }
 #search-section #search-txt{
     border-right: 0px;
+}
+body,
+.banner-intro h1,
+#search-section  #search-options-link,
+#featued-listing h2,
+.search-result-item .badge-bottom .price,
+.search-result-item .location,
+.search-result-item .status,
+.beds p,
+#home-selections .card-home .desc,
+#home-selections .card-home .btn,
+#journey-with-us h2,
+#journey-with-us p,
+.widget-cat .title, .widget-cat .number{
+font-family: dinregular !important;
+}
+#search-result-section #result-count{
+    left: -35px;
+    right: unset;
 }

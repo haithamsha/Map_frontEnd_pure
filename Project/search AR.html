@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar-eg" dir="rtl">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search</title>
+  <title>Search AR</title>
   <!-- CSS only -->
 
 
-  <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap/bootstrap.rtl.min.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
+  
   <link href="assets/css/header.css" rel="stylesheet">
   <link href="assets/css/footer.css" rel="stylesheet">
   <link href="assets/css/buttons-override.css" rel="stylesheet">
   <link href="assets/css/widget.css" rel="stylesheet">
   <link href="assets/css/search.css" rel="stylesheet">
+  <link href="assets/css/style-rtl.css" rel="stylesheet">
   <!-- JavaScript Bundle with Popper -->
   <script src="assets/js/bootstrap/bootstrap.min.js"></script>
   <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -37,22 +39,22 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Search</a>
+              <a class="nav-link" href="#">بحث</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Sell</a>
+              <a class="nav-link">بيع</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">About Us</a>
+              <a class="nav-link">من نحن</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Contact Us</a>
+              <a class="nav-link">اتصل بنا</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Blog</a>
+              <a class="nav-link">المدونه</a>
             </li>
           </ul>
 
@@ -61,10 +63,10 @@
               <a class="nav-link" href="#">English</a>
             </li>
             <li class="nav-item ms-lg-5 me-lg-2">
-              <a class="nav-link">Sing In</a>
+              <a class="nav-link">سجل الدخول</a>
             </li>
             <li class="nav-item">
-              <button class="btn" type="button">Register</button>
+              <button class="btn" type="button">حساب جديد</button>
             </li>
           </ul>
 
@@ -77,7 +79,7 @@
   <div class="container-fluid p-0 banner-intro">
     <div class="banner-inner-intro">
       <img src="assets/images/search/search-bg.png" class="banner-img">
-      <h1>What are you looking for ?</h1>
+      <h1>ما الذي تبحث عنة ؟</h1>
 
     </div>
 
@@ -89,83 +91,83 @@
     <div class="row justify-content-between" id="search-filters-widgets">
       <div class="widget">
         <img src="assets/images/search/Apartment.png">
-        <h3 class="title">Apartment</h3>
+        <h3 class="title">شقة</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/villa.png">
-        <h3 class="title">Villa</h3>
+        <h3 class="title">فيلا</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/Twin.png">
-        <h3 class="title">Twinhouse</h3>
+        <h3 class="title">توين هاوس</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/Town.png">
-        <h3 class="title">Townhouse</h3>
+        <h3 class="title">تاون هاوس</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/Cabin.png">
-        <h3 class="title">Cabin</h3>
+        <h3 class="title">كابينة</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/Clinic.png">
-        <h3 class="title">Clinic</h3>
+        <h3 class="title">عيادة</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/Duplex.png">
-        <h3 class="title">Duplex</h3>
+        <h3 class="title">دوبلكس</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/penthouse.png">
-        <h3 class="title">Penthouse</h3>
+        <h3 class="title">بينت هاوس</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/Chalet.png">
-        <h3 class="title">Chalet</h3>
+        <h3 class="title">شاليه</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/Studio.png">
-        <h3 class="title">Studio</h3>
+        <h3 class="title">استوديو</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/Office.png">
-        <h3 class="title">Office</h3>
+        <h3 class="title">مكتب</h3>
       </div>
       <div class="widget">
         <img src="assets/images/search/Retail.png">
-        <h3 class="title">Retail</h3>
+        <h3 class="title">تجاري</h3>
       </div>
     </div>
 
     <div id="search-section" class="text-center">
       <div id="search-tabs">
-        <button class="btn" type="button">Buy</button>
-        <button class="btn ms-lg-4" type="button">Rent</button>
+        <button class="btn" type="button">للبيع</button>
+        <button class="btn ms-lg-4" type="button">للإيجار</button>
       </div>
 
       <div class="input-group">
         <span class="input-group-text"><img src="assets/images/landing-page/map-logo.png"></span>
-        <input type="text" class="form-control" placeholder="Address, City or Zip" id="search-txt"
+        <input type="text" class="form-control" placeholder="اكتب مكان البحث هنا" id="search-txt"
           aria-describedby="search-btn">
-        <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
+        <button class="btn btn-outline-secondary" type="button" id="search-btn">بحث</button>
       </div>
 
       <div id="search-numeric-controls" class="d-lg-flex justify-content-lg-between">
 
         <div class="d-flex" id="price">
-          <input type="number" class="form-control" placeholder="Min Price" min="1" max="100">
-          <input type="number" class="form-control ms-2" placeholder="Max Price" min="1" max="100">
+          <input type="number" class="form-control" placeholder="أقل سعر" min="1" max="100">
+          <input type="number" class="form-control ms-2" placeholder="أعلى سعر" min="1" max="100">
         </div>
 
         <div class="d-flex" id="bred">
-          <input type="number" class="form-control" placeholder="Breds" min="1" max="100">
-          <input type="number" class="form-control ms-2" placeholder="Baths" min="1" max="100">
+          <input type="number" class="form-control" placeholder="غرف" min="1" max="100">
+          <input type="number" class="form-control ms-2" placeholder="حمام" min="1" max="100">
         </div>
         <div class="d-flex">
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuCompound" data-bs-toggle="dropdown"
               aria-expanded="false">
-              Choose a Compound
+              اختيار الكمبوند
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuCompound">
               <li><a class="dropdown-item" href="#">Action</a></li>
@@ -176,50 +178,49 @@
         </div>
 
       </div>
-
     </div>
     <div id="more-search-section">
       <div class="d-lg-flex justify-content-between">
         <div>
-          <h3>More Filters <img src="assets/images/search/arrow-down.png"></h3>
+          <h3>خيارات اخرى <img src="assets/images/search/arrow-down.png"></h3>
         </div>
        
         <div class="d-flex mt-lg-5">
           <div class="me-lg-5">
-            <p class="search-lbl">Square Meter (M2)</p>
+            <p class="search-lbl">المساحة متر مربع (م٢)</p>
             <div class="d-flex" >
               <input type="number" class="form-control me-2" placeholder="Min" min="1" max="100">
               <input type="number" class="form-control" placeholder="Max" min="1" max="100">
             </div>
           </div>
           <div>
-            <p class="search-lbl">Finishing</p>
+            <p class="search-lbl">أنواع التشطيب</p>
             <div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="radio1" id="radio1">
                 <label class="form-check-label" for="radio1">
-                  Not Finished
+                  بدون تشطيب
                 </label>
               </div>
   
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="radio2" id="radio2" checked>
                 <label class="form-check-label" for="radio2">
-                  Semi Finished
+                  تشطيب جزئي
                 </label>
               </div>
   
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="radio3" id="radio3" checked>
                 <label class="form-check-label" for="radio3">
-                  Finished
+                  تشطيب كامل
                 </label>
               </div>
   
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="radio4" id="radio4" checked>
                 <label class="form-check-label" for="radio4">
-                  Furnished
+                  مفروش
                 </label>
               </div>
   
@@ -230,19 +231,19 @@
         <div class="d-flex mt-lg-5">
         
           <div class="me-lg-5">
-            <p class="search-lbl">Sale Type</p>
+            <p class="search-lbl">نوع البيع</p>
             <div>
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="Resale" id="Resale">
                 <label class="form-check-label" for="Resale">
-                  Resale
+                  إعادة بيع
                 </label>
               </div>
   
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="Developer" id="Developer" checked>
                 <label class="form-check-label" for="Developer">
-                  Developer Sale
+                  من المطور
                 </label>
               </div>
             </div>
@@ -251,27 +252,27 @@
   
   
           <div>
-            <p class="search-lbl">Delivery Date</p>
+            <p class="search-lbl">موعد التسليم</p>
             <div>
   
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="Now" id="Now">
                 <label class="form-check-label" for="Now">
-                  Now
+                  جاهز للتسليم
                 </label>
               </div>
   
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="2024" id="2024" checked>
                 <label class="form-check-label" for="2024">
-                  2024
+                  ٢٠٢٤
                 </label>
               </div>
   
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="2025" id="2025" checked>
                 <label class="form-check-label" for="2025">
-                  2025+
+                  ٢٠٢٥+
                 </label>
               </div>
   
@@ -283,7 +284,7 @@
         </div>
       </div>
     <div class="w-100" id="reset-div">
-      <img src="assets/images/search/reset.png"> <a>Reset All</a>
+      <img src="assets/images/search/reset.png"> <a>افتراضي</a>
     </div>
    
     </div>
@@ -292,12 +293,12 @@
   <div class="container-fluid" id="search-result-section">
 
     <div class="d-flex justify-content-between" id="search-result-header">
-      <h2>Search Results <p id="result-count">544</p></h2>
+      <h2>نتائج البحث <p id="result-count">544</p></h2>
 
       <div class="dropdown">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuCompound"
           data-bs-toggle="dropdown" aria-expanded="false">
-          View Agents
+          فرز بواسطة
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuCompound">
           <li><a class="dropdown-item" href="#">Action</a></li>
@@ -309,52 +310,52 @@
     </div>
     <div class="row justify-content-lg-between" id="search-result-categories">
       <div class="widget-cat selected">
-        <h3 class="title">Apartment</h3>
-        <p class="number">10</p>
+        <h3 class="title">شقة</h3>
+        <p class="number">50</p>
       </div>
 
       <div class="widget-cat">
-        <h3 class="title">Villa</h3>
+        <h3 class="title">فيلا</h3>
         <p class="number">2</p>
       </div>
 
       <div class="widget-cat">
-        <h3 class="title">Duplex</h3>
+        <h3 class="title">دوبلكس</h3>
         <p class="number">15</p>
       </div>
 
       <div class="widget-cat">
-        <h3 class="title">Townhouse</h3>
+        <h3 class="title">تاون هاوس</h3>
         <p class="number">4</p>
       </div>
 
       <div class="widget-cat">
-        <h3 class="title">Office</h3>
+        <h3 class="title">مكتب</h3>
         <p class="number">5</p>
       </div>
 
       <div class="widget-cat">
-        <h3 class="title">Clinic</h3>
+        <h3 class="title">عيادة</h3>
         <p class="number">7</p>
       </div>
     </div>
     <div class="row d-flex justify-content-center">
 
       <div class="mb-3 search-result-item-container">
-        <div class="search-result-item mb-3">
+        <div class="search-result-item">
 
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
-              Sold
+              تم البيع
             </div>
             <div class="location">
-              6th of October City
+              مدينة ٦ اكتوبر
             </div>
           </div>
           <div class="d-flex justify-content-between w-100 badge-bottom">
             <div class="price">
-              5,800,000 EGP
+              ٥,٨٠٠,٠٠٠ جم
             </div>
             <div class="contact d-flex justify-content-between">
               <img src="assets/images/landing-page/phone.png">
@@ -363,7 +364,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>5 Beds 5 Baths 5090 SqFt</p>
+          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -374,15 +375,15 @@
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
-              Sold
+              تم البيع
             </div>
             <div class="location">
-              6th of October City
+              مدينة ٦ اكتوبر
             </div>
           </div>
           <div class="d-flex justify-content-between w-100 badge-bottom">
             <div class="price">
-              5,800,000 EGP
+              ٥,٨٠٠,٠٠٠ جم
             </div>
             <div class="contact d-flex justify-content-between">
               <img src="assets/images/landing-page/phone.png">
@@ -391,7 +392,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>5 Beds 5 Baths 5090 SqFt</p>
+          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -402,15 +403,15 @@
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
-              Sold
+              تم البيع
             </div>
             <div class="location">
-              6th of October City
+              مدينة ٦ اكتوبر
             </div>
           </div>
           <div class="d-flex justify-content-between w-100 badge-bottom">
             <div class="price">
-              5,800,000 EGP
+              ٥,٨٠٠,٠٠٠ جم
             </div>
             <div class="contact d-flex justify-content-between">
               <img src="assets/images/landing-page/phone.png">
@@ -419,7 +420,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>5 Beds 5 Baths 5090 SqFt</p>
+          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -432,15 +433,15 @@
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
-              Sold
+              تم البيع
             </div>
             <div class="location">
-              6th of October City
+              مدينة ٦ اكتوبر
             </div>
           </div>
           <div class="d-flex justify-content-between w-100 badge-bottom">
             <div class="price">
-              5,800,000 EGP
+              ٥,٨٠٠,٠٠٠ جم
             </div>
             <div class="contact d-flex justify-content-between">
               <img src="assets/images/landing-page/phone.png">
@@ -449,7 +450,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>5 Beds 5 Baths 5090 SqFt</p>
+          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -460,15 +461,15 @@
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
-              Sold
+              تم البيع
             </div>
             <div class="location">
-              6th of October City
+              مدينة ٦ اكتوبر
             </div>
           </div>
           <div class="d-flex justify-content-between w-100 badge-bottom">
             <div class="price">
-              5,800,000 EGP
+              ٥,٨٠٠,٠٠٠ جم
             </div>
             <div class="contact d-flex justify-content-between">
               <img src="assets/images/landing-page/phone.png">
@@ -477,7 +478,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>5 Beds 5 Baths 5090 SqFt</p>
+          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -488,15 +489,15 @@
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
-              Sold
+              تم البيع
             </div>
             <div class="location">
-              6th of October City
+              مدينة ٦ اكتوبر
             </div>
           </div>
           <div class="d-flex justify-content-between w-100 badge-bottom">
             <div class="price">
-              5,800,000 EGP
+              ٥,٨٠٠,٠٠٠ جم
             </div>
             <div class="contact d-flex justify-content-between">
               <img src="assets/images/landing-page/phone.png">
@@ -505,7 +506,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>5 Beds 5 Baths 5090 SqFt</p>
+          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -517,15 +518,15 @@
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
-              Sold
+              تم البيع
             </div>
             <div class="location">
-              6th of October City
+              مدينة ٦ اكتوبر
             </div>
           </div>
           <div class="d-flex justify-content-between w-100 badge-bottom">
             <div class="price">
-              5,800,000 EGP
+              ٥,٨٠٠,٠٠٠ جم
             </div>
             <div class="contact d-flex justify-content-between">
               <img src="assets/images/landing-page/phone.png">
@@ -534,7 +535,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>5 Beds 5 Baths 5090 SqFt</p>
+          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -545,15 +546,15 @@
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
-              Sold
+              تم البيع
             </div>
             <div class="location">
-              6th of October City
+              مدينة ٦ اكتوبر
             </div>
           </div>
           <div class="d-flex justify-content-between w-100 badge-bottom">
             <div class="price">
-              5,800,000 EGP
+              ٥,٨٠٠,٠٠٠ جم
             </div>
             <div class="contact d-flex justify-content-between">
               <img src="assets/images/landing-page/phone.png">
@@ -562,7 +563,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>5 Beds 5 Baths 5090 SqFt</p>
+          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -573,15 +574,15 @@
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
-              Sold
+              تم البيع
             </div>
             <div class="location">
-              6th of October City
+              مدينة ٦ اكتوبر
             </div>
           </div>
           <div class="d-flex justify-content-between w-100 badge-bottom">
             <div class="price">
-              5,800,000 EGP
+              ٥,٨٠٠,٠٠٠ جم
             </div>
             <div class="contact d-flex justify-content-between">
               <img src="assets/images/landing-page/phone.png">
@@ -590,7 +591,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>5 Beds 5 Baths 5090 SqFt</p>
+          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -610,49 +611,49 @@
           </ul>
         </div>
         <div class="col-lg-2">
-          <h5>Company</h5>
+          <h5>شركتنا</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">For Employers</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Success Stories</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Careers</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">من نحن</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">موظفينا</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">قصص ناجحة</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">الوظائف</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">اتصل بنا</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2">
-          <h5>Locations</h5>
+          <h5>المواقع</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Location 1</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Location 2</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">موقع ١</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">موقع ٢</a></li>
           </ul>
-          <h5>Popular Links</h5>
+          <h5>روابط سريعه</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Browse Jobs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Browse Companies</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">MAP Real Estate</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Real Estate</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Dream Jobs Events</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Podcasts</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">الوسطاء</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">تصفح الشركات</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">ماب للتسويق العقاري</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">عقارات</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">أحداث ومناسبات مهمة</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">بودكاست</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2">
-          <h5>Our Offices
+          <h5>مكاتبنا
           </h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 mb-lg-4"><b class="header-location">New Cairo</b>
-                <br>New Cairo, Egypt.
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 mb-lg-4"><b class="header-location">القاهرة الجديدة, مصر</b>
               </a></li>
-            <li class="nav-item mb-2 mt-lg-5"><a href="#" class="nav-link p-0 "><b class="header-location">6th of
-                  October</b><br>
-                6th of October City, Egypt . </a></li>
+            <li class="nav-item mb-2 mt-lg-5"><a href="#" class="nav-link p-0 "><b class="header-location">مدينة السادس من اكتوبر
+                  </b><br>
+                  مدينة السادس من اكتوبر, مصر
+                </a></li>
           </ul>
         </div>
 
         <div class="col-lg-4">
           <div id="follow-us">
-            <h5>Follow Us
+            <h5>تابعونا
             </h5>
             <div>
               <a class="social-icon-link"> <img src="assets/images/footer/Linkedin.png"></a>
@@ -664,12 +665,12 @@
             </div>
           </div>
           <form>
-            <h5>Be in the know</h5>
-            <p class="nav-link mb-2">Members receive notifications early</p>
+            <h5>كن على اطلاع</h5>
+            <p class="nav-link mb-2">ادخل ايميلك أو رقم هاتفك ليصلك كل جديدنا</p>
             <div class="d-flex w-100 gap-2">
               <label for="newsletter" class="visually-hidden">Email</label>
-              <input id="newsletter" type="text" class="form-control" placeholder="Email">
-              <button class="btn" type="button">Sign Up Now</button>
+              <input id="newsletter" type="text" class="form-control" placeholder="الايميل او الهاتف">
+              <button class="btn" type="button">تسجيل</button>
             </div>
           </form>
         </div>
@@ -677,10 +678,10 @@
 
       <div class="d-flex justify-content-between py-4 my-4 border-top footer-bottom">
         <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="nav-link" href="#">Term of Use</a></li>
-          <li class="ms-3"><a class="nav-link" href="#">Privacy Statement</a></li>
+          <li class="ms-3"><a class="nav-link" href="#">سياسة الاستخدام</a></li>
+          <li class="ms-3"><a class="nav-link" href="#">سياسة الخصوصية</a></li>
         </ul>
-        <p>© 2021 Company, Inc. All rights reserved.</p>
+        <p> جميع الحقوق محفوظة ٢٠٢٣</p>
       </div>
     </footer>
   </div>

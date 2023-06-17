@@ -1,3 +1,14 @@
+
+.btn-secondary {
+    color: #fff;
+    background-color:var(--blue);
+    border-color:var(--blue);
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: var(--blue);
+    border-color:var(--blue);
+}
 .btn-outline-secondary {
     --bs-btn-color: var(--blue);
     --bs-btn-border-color: var(--blue);

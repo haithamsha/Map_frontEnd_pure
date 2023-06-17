@@ -1,0 +1,79 @@
+#sell-intro-container {
+    background-color: var(--light-gray);
+}
+
+.steps {
+    background-color: white;
+    color: var(--blue);
+    width: 224px;
+    height: 168px;
+    border: 1px solid var(--badge-bg);
+    border-radius: 10px;
+    position: relative;
+    padding: 55px 15px;
+
+}
+
+.step-number {
+    background: #FFFFFF;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--blue);
+    width: 75px;
+    height: 75px;
+    left: calc(50% - 38.5px);
+    top: -38.5px;
+    border: 1px solid var(--badge-bg);
+    position: absolute;
+    border-radius: 100%;
+    text-align: center;
+}
+
+#sell-steps {
+    max-width: 960px;
+    margin: 116px auto;
+}
+
+.step-desc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--blue);
+    text-align: center;
+}
+
+#sell-form {
+    margin: 50px auto;
+    max-width: 525px;
+}
+
+.sell-control-label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+
+#other-info-txtarea::-webkit-input-placeholder {
+    position: absolute;
+    top:calc(50% - 12px);
+}
+#other-info-txtarea:-moz-placeholder {
+    /* Firefox 18- */
+    position: absolute;
+    top:calc(50% - 12px);
+}
+#other-info-txtarea::-moz-placeholder {
+    /* Firefox 19+ */
+    position: absolute;
+    top:calc(50% - 12px);
+}
+#other-info-txtarea:-ms-input-placeholder {
+    position: absolute;
+    top:calc(50% - 12px);
+}

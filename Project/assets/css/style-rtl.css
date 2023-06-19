@@ -27,7 +27,10 @@ body,
 .widget-cat .title, .widget-cat .number,
 .sell-control-label,
 #sell-intro-container .step-desc,
-#sell-intro-container .step-number{
+#sell-intro-container .step-number,
+#contact-us-desc,
+#contact-us-container h1,
+.contact-control-label{
 font-family: dinregular !important;
 }
 #search-result-section #result-count{

@@ -1,0 +1,72 @@
+
+#contact-us-container{
+height: 700px;
+}
+[dir="ltr"] #contact-us-desc{
+    margin: 50px auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 825px;
+}
+#contact-us-form {
+    margin: 50px auto;
+    max-width: 525px;
+}
+.contact-control-label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+
+#other-info-txtarea::-webkit-input-placeholder {
+    position: absolute;
+    top:calc(50% - 12px);
+}
+#other-info-txtarea:-moz-placeholder {
+    /* Firefox 18- */
+    position: absolute;
+    top:calc(50% - 12px);
+}
+#other-info-txtarea::-moz-placeholder {
+    /* Firefox 19+ */
+    position: absolute;
+    top:calc(50% - 12px);
+}
+#other-info-txtarea:-ms-input-placeholder {
+    position: absolute;
+    top:calc(50% - 12px);
+}
+[dir="ltr"] #contact-us-desc{
+    width: 830px;
+}
+[dir="ltr"] #contact-us-container h1{
+    left: calc(50% - 300px);
+}
+
+[dir="rtl"] #contact-us-container h1{
+    right: calc(50% - 175px);
+    width: fit-content;
+}
+
+[dir="ltr"] #contact-us-desc{
+    max-width: 825px;
+}
+
+[dir="rtl"] #contact-us-desc{
+    margin: 50px auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+}
+[dir="rtl"] #contact-us-desc{
+    width: 535px;
+}

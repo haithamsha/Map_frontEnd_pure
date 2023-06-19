@@ -24,10 +24,25 @@ body,
 #home-selections .card-home .btn,
 #journey-with-us h2,
 #journey-with-us p,
-.widget-cat .title, .widget-cat .number{
+.widget-cat .title, .widget-cat .number,
+.sell-control-label,
+#sell-intro-container .step-desc,
+#sell-intro-container .step-number{
 font-family: dinregular !important;
 }
 #search-result-section #result-count{
     left: -35px;
     right: unset;
+}
+#sell-intro-container .step-desc{
+    font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 35px;
+}
+.steps{
+    padding: 50px 25px !important;
+}
+#sell-intro-container h1{
+    right: calc(50% - 350px) !important;
 }

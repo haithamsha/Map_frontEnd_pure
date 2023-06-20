@@ -2,10 +2,11 @@ header .navbar-nav .nav-link{
     color: black !important;
   }
   
-  header .navbar-nav:first-child .nav-link{
+  /* header .navbar-nav:first-child .nav-link{
     margin-inline-end: 45px;
-  }
+  } */
   header .navbar-nav .btn{
     background-color: var(--red);
     color: white !important;
   }
+  

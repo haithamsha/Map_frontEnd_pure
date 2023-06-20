@@ -22,9 +22,9 @@
   #follow-us .social-icon-link{
     margin-inline-end: 18px;
   }
-#newsletter{
+/* #newsletter{
   width: 245px;
-}
+} */
 #footer form .btn{
   background-color: var(--gray-6);
   color:#333333;

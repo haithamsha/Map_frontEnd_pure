@@ -25,28 +25,30 @@
 <body>
   <!-- Header -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light px-5">
+    <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo"
           aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand col-lg-3" href="#"><img src="assets/images/logo/map-logo-red.png"></a>
+
+        <a class="navbar-brand" href="#"><img src="assets/images/logo/map-logo-red.png"></a>
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-md-2">
               <a class="nav-link" href="#">Search</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-md-2">
               <a class="nav-link">Sell</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-md-2">
               <a class="nav-link">About Us</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-md-2">
               <a class="nav-link">Contact Us</a>
             </li>
             <li class="nav-item">
@@ -54,11 +56,11 @@
             </li>
           </ul>
 
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link" href="#">English</a>
             </li>
-            <li class="nav-item ms-lg-5 me-lg-2">
+            <li class="nav-item me-lg-2">
               <a class="nav-link">Sing In</a>
             </li>
             <li class="nav-item">
@@ -91,18 +93,18 @@
           <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
         </div>
 
-        <div id="search-numeric-controls" class="d-lg-flex justify-content-lg-between">
+        <div id="search-numeric-controls" class="d-flex justify-content-center justify-content-lg-between flex-wrap">
 
-          <div class="d-flex" id="price">
+          <div class="d-flex justify-content-center" id="price">
             <input type="number" class="form-control" placeholder="Min Price" min="1" max="100">
             <input type="number" class="form-control ms-2" placeholder="Max Price" min="1" max="100">
           </div>
 
-          <div class="d-flex" id="bred">
+          <div class="d-flex justify-content-center w-sm-100 w-md-auto" id="bred">
             <input type="number" class="form-control" placeholder="Breds" min="1" max="100">
             <input type="number" class="form-control ms-2" placeholder="Baths" min="1" max="100">
           </div>
-          <div class="d-flex">
+          <div class="d-flex justify-content-center" id="compound-name">
             <div class="dropdown">
               <button class="btn dropdown-toggle" type="button" id="dropdownMenuCompound" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -145,11 +147,13 @@
       </div>
 
     </div>
-    <div class="row d-flex justify-content-center">
 
+    <!-- <div class="row d-flex justify-content-center">
+    </div> -->
+    <div class="row d-flex justify-content-center features-items-listing" >
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item mb-3">
-
+    
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
@@ -174,10 +178,10 @@
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
-
+    
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item">
-
+    
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
@@ -202,10 +206,10 @@
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
-
+    
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item">
-
+    
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
@@ -230,12 +234,14 @@
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
-    </div>
-
-    <div class="row d-flex justify-content-center">
+    
+    
+    
+    <!-- <div class="row d-flex justify-content-center"> -->
+    
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item">
-
+    
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
@@ -260,10 +266,10 @@
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
-
+    
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item">
-
+    
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
@@ -288,10 +294,10 @@
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
-
+    
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item">
-
+    
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
@@ -316,11 +322,12 @@
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
-    </div>
-    <div class="row d-flex justify-content-center">
+    <!-- </div> -->
+
+   
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item">
-
+    
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
@@ -345,10 +352,10 @@
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
-
+    
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item">
-
+    
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
@@ -373,10 +380,10 @@
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
-
+    
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item">
-
+    
           <div class="badge-top d-flex align-items-center justify-content-between">
             <div class="status">
               <img src="assets/images/landing-page/ph_house.png">
@@ -401,14 +408,14 @@
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
-
+    
     </div>
 
   </div>
 
   <div class="container-fluid" id="home-selections">
 
-    <div class="row d-flex justify-content-center">
+    <div class="d-flex justify-content-center">
 
       <div class=" card-home">
         <img src="assets/images/landing-page/buy-home.jpg">
@@ -419,7 +426,7 @@
         <button class="btn btn-outline-secondary">Browse homes</button>
       </div>
 
-      <div class=" card-home mx-lg-3">
+      <div class=" card-home mx-3">
         <img src="assets/images/landing-page/sell-home.jpg">
         <h2 class="title">Sell a home</h2>
         <p class="desc">
@@ -445,26 +452,28 @@
     <h2>
       Experience your home buying or selling journey with us
     </h2>
-    <div class="d-flex justify-content-lg-center align-items-center mb-lg-3">
-      <p class="mx-lg-2">As real estate professionals, we have the knowledge and experience to help you buy or sell your
-        home, land or property.</p>
-      <img src="assets/images/landing-page/real-estate-professionals.jpeg">
-    </div>
-    <div class="d-flex justify-content-lg-center align-items-center">
-      <img src="assets/images/landing-page/schools.jpeg" class="me-lg-5">
-      <p>How are the schools? Get important local information on the area you're most interested in.</p>
+    <div id="journey-with-us-inner">
+      <div class="d-flex justify-content-lg-center align-items-center mb-sm-3">
+        <p class="mx-sm-2">As real estate professionals, we have the knowledge and experience to help you buy or sell your
+          home, land or property.</p>
+        <img src="assets/images/landing-page/real-estate-professionals.jpeg">
+      </div>
+      <div class="d-flex justify-content-lg-center align-items-center">
+        <img src="assets/images/landing-page/schools.jpeg" class="me-sm-3">
+        <p>How are the schools? Get important local information on the area you're most interested in.</p>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
   <div id="footer">
-    <footer class="p-5">
+    <footer class="p-sm-3 p-md-5">
       <div class="row">
-        <div class="col-lg-2">
+        <div class="col-sm-3 col-lg-2">
           <img src="assets/images/logo/map-logo-white.png">
           </ul>
         </div>
-        <div class="col-lg-2">
+        <div class="col-sm-3  col-lg-2">
           <h5>Company</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
@@ -475,7 +484,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-sm-3  col-lg-2">
           <h5>Locations</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Location 1</a></li>
@@ -492,7 +501,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-sm-3 col-lg-2">
           <h5>Our Offices
           </h5>
           <ul class="nav flex-column">
@@ -505,7 +514,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-sm-12 col-lg-4">
           <div id="follow-us">
             <h5>Follow Us
             </h5>

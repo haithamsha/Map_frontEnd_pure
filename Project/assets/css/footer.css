@@ -4,16 +4,11 @@
     font-family: Inter;
   }
   #footer h5{
-    font-size: 24px;
     font-weight: 700;
-    line-height: 64px;
   }
   #footer .nav-link{
     color: rgb(250, 250, 250,0.7);
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    
   }
   #follow-us{
     margin-bottom: 70px;

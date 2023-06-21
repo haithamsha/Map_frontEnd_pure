@@ -15,6 +15,7 @@
   <link href="assets/css/header.css" rel="stylesheet">
   <link href="assets/css/footer.css" rel="stylesheet">
   <link href="assets/css/buttons-override.css" rel="stylesheet">
+  <link href="assets/css/responsive-overrides.css" rel="stylesheet">
   <!-- JavaScript Bundle with Popper -->
   <script src="assets/js/bootstrap/bootstrap.min.js"></script>
   <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
@@ -415,9 +416,9 @@
 
   <div class="container-fluid" id="home-selections">
 
-    <div class="d-flex justify-content-center">
+    <div class="d-sm-flex justify-content-center">
 
-      <div class=" card-home">
+      <div class=" card-home mb-3">
         <img src="assets/images/landing-page/buy-home.jpg">
         <h2 class="title">Buy a home</h2>
         <p class="desc">
@@ -426,7 +427,7 @@
         <button class="btn btn-outline-secondary">Browse homes</button>
       </div>
 
-      <div class=" card-home mx-3">
+      <div class=" card-home mx-sm-3  mb-3">
         <img src="assets/images/landing-page/sell-home.jpg">
         <h2 class="title">Sell a home</h2>
         <p class="desc">
@@ -435,7 +436,7 @@
         <button class="btn btn-outline-secondary">See your options</button>
       </div>
 
-      <div class=" card-home">
+      <div class=" card-home  mb-3">
         <img src="assets/images/landing-page/rent-home.jpg">
         <h2 class="title">Rent a home</h2>
         <p class="desc">
@@ -454,12 +455,12 @@
     </h2>
     <div id="journey-with-us-inner">
       <div class="d-flex justify-content-lg-center align-items-center mb-sm-3">
-        <p class="mx-sm-2">As real estate professionals, we have the knowledge and experience to help you buy or sell your
+        <p class="mx-2">As real estate professionals, we have the knowledge and experience to help you buy or sell your
           home, land or property.</p>
         <img src="assets/images/landing-page/real-estate-professionals.jpeg">
       </div>
       <div class="d-flex justify-content-lg-center align-items-center">
-        <img src="assets/images/landing-page/schools.jpeg" class="me-sm-3">
+        <img src="assets/images/landing-page/schools.jpeg" class="me-3">
         <p>How are the schools? Get important local information on the area you're most interested in.</p>
       </div>
     </div>
@@ -467,13 +468,13 @@
 
   <!-- Footer -->
   <div id="footer">
-    <footer class="p-sm-3 p-md-5">
+    <footer class="p-sm-3 p-3 p-md-5">
       <div class="row">
-        <div class="col-sm-3 col-lg-2">
-          <img src="assets/images/logo/map-logo-white.png">
+        <div class="col-sm-3 mb-3 col-lg-2">
+          <img id="logo-footer" src="assets/images/logo/map-logo-white.png">
           </ul>
         </div>
-        <div class="col-sm-3  col-lg-2">
+        <div class="col-sm-3 col-4 col-lg-2">
           <h5>Company</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
@@ -484,7 +485,7 @@
           </ul>
         </div>
 
-        <div class="col-sm-3  col-lg-2">
+        <div class="col-sm-3 col-4 col-lg-2">
           <h5>Locations</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Location 1</a></li>
@@ -501,7 +502,7 @@
           </ul>
         </div>
 
-        <div class="col-sm-3 col-lg-2">
+        <div class="col-sm-3 col-4 col-lg-2">
           <h5>Our Offices
           </h5>
           <ul class="nav flex-column">
@@ -514,7 +515,7 @@
           </ul>
         </div>
 
-        <div class="col-sm-12 col-lg-4">
+        <div class="col-sm-12 col-12 col-lg-4">
           <div id="follow-us">
             <h5>Follow Us
             </h5>
@@ -527,7 +528,7 @@
               <a class="social-icon-link"> <img src="assets/images/footer/youtube.png"></a>
             </div>
           </div>
-          <form>
+          <form id="footer-form">
             <h5>Be in the know</h5>
             <p class="nav-link mb-2">Members receive notifications early</p>
             <div class="d-flex w-100 gap-2">

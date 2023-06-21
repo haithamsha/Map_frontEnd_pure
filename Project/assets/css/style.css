@@ -19,16 +19,8 @@
     src: url(../fonts/Englsih/inter/Inter-VariableFont_slnt\,wght.ttf);
 }
 
-.banner-img {
-    width: 100%;
-    height: 500px;
-}
 
-@media screen and (min-width: 769px) {
-    .banner-intro {
-        height: 900px;
-    }
-}
+
 
 .banner-inner-intro {
     position: relative;
@@ -82,10 +74,10 @@
     }
 }
 
-@media screen and (max-width: 769px) {
+@media (min-width: 576px) and (max-width: 768px) {
     #search-section {
         /* position: absolute; */
-        width: var(--tablet-max-size);
+        max-width: var(--tablet-max-size);
         margin: 30px auto;
         height: 410px;
     }
@@ -173,21 +165,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 #featued-listing h2 {
     font-family: Inter;
-    font-size: 36px;
+    /* font-size: 36px; */
     line-height: 42px;
     color: #000000;
-}
-
-@media screen and (max-width: 768px) {
-    #featued-listing #features-header {
-        max-width: var(--tablet-max-size);
-    }
-}
-
-@media screen and (min-width: 769px) {
-    #featued-listing #features-header {
-        max-width: var(--desktop-max-size);
-    }
 }
 
 #featued-listing #features-header {
@@ -303,20 +283,6 @@ input[type=number]::-webkit-outer-spin-button {
 #home-selections {
     padding: 75px 0px;
 }
-@media screen and (max-width: 768px) {
-    #home-selections .card-home {
-        width: 235px;
-    }
-    #home-selections .card-home img{
-        width: 200px;
-    }
-  }
-
-@media screen and (min-width: 769px) {
-    #home-selections .card-home {
-        width: 305px;
-    }
-  }
 
 #home-selections .card-home {
     border: 1px solid var(--badge-bg);
@@ -356,33 +322,14 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: var(--light-gray);
     padding: 25px 0px;
 }
-@media (min-width: 576px) and (max-width: 768px) {
-    #journey-with-us h2,
-    #journey-with-us-inner {
-        max-width: var(--tablet-max-size);
-    }
-    #journey-with-us img {
-        width: 350px;
-        height: 295px;
-    }
-   
-  }
-  @media screen and (min-width: 769px) {
-    #journey-with-us h2,
-    #journey-with-us-inner {
-        max-width: var(--desktop-max-size);
-    }
-    #journey-with-us img {
-        width: 425px;
-        height: 295px;
-    }
-  }  
+
+
 #journey-with-us h2 {
     margin: 0px auto 75px auto;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    /* font-size: 36px; */
     line-height: 42px;
    
 }
@@ -397,7 +344,9 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 18px;
     line-height: 24px;
 }
-
+#journey-with-us-inner img{
+    width: 50%;
+}
 
 
 /*****************************************/

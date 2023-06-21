@@ -21,6 +21,47 @@
     #footer #logo-footer{
         width: 108px;
     }
+    .banner-intro h1 {
+        top: 70px;
+        font-size: 24px;
+        line-height: 70px;
+       
+    }
+    [dir="ltr"] .banner-intro h1{
+        left: calc(50% - 190px);
+    }
+    [dir="rtl"] .banner-intro h1{
+        right: calc(50% - 120px);
+    }
+    #home-selections .card-home {
+        width: 365px;
+        margin-inline: auto;
+    }
+    #search-section {
+        max-width: var(--tablet-max-size);
+        margin: 30px 15px;
+        height: 410px;
+        padding: 24px 10px;
+    }
+
+    #price,
+    #bred,
+    #compound-name {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #search-section #search-tabs,
+    #search-section .input-group,
+    #search-section #search-numeric-controls {
+        margin-bottom: 20px;
+    }
+    #featued-listing{
+        padding: 50px 0px;
+    }
+    #featued-listing #features-header{
+        max-width: var(--mobile-max-size);
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -40,6 +81,30 @@
     }
     #featued-listing #features-header {
         max-width: var(--tablet-max-size);
+    }
+    .banner-intro h1 {
+        top: 350px;
+        margin: 0 5%;
+        text-align: center;
+    }
+    #search-section {
+        max-width: var(--tablet-max-size);
+        margin: 30px auto;
+        height: 410px;
+        padding: 24px;
+    }
+
+    #price,
+    #bred,
+    #compound-name {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #search-section #search-tabs,
+    #search-section .input-group,
+    #search-section #search-numeric-controls {
+        margin-bottom: 20px;
     }
 }
 
@@ -79,5 +144,35 @@
     }
     #footer-form input{
         width: 55%;
+    }
+    .banner-intro h1 {
+        bottom: 50px;
+        font-size: 48px;
+        line-height: 70px;
+        left: calc(50% - 385px);
+    }
+    #search-section {
+        position: absolute;
+        width: var(--desktop-max-size);
+        height: 345px;
+        padding: 24px;
+    }
+
+    #price,
+    #bred {
+        width: fit-content;
+    }
+
+    #search-section #search-tabs,
+    #search-section .input-group,
+    #search-section #search-numeric-controls {
+        margin-bottom: 35px;
+    }
+    #featued-listing{
+        padding: 190px 0px;
+    }
+    .search-result-item {
+        width: 295px;
+        height: 292px;
     }
 }  

@@ -7,6 +7,7 @@
     --light-blue: rgba(222, 227, 237, 1);
     --desktop-max-size: 960px;
     --tablet-max-size: 700px;
+    --mobile-max-size: 380px;
 }
 
 @font-face {
@@ -20,8 +21,6 @@
 }
 
 
-
-
 .banner-inner-intro {
     position: relative;
 }
@@ -30,76 +29,16 @@
     font-family: Inter;
     color: white;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 70px;
-    /* border: 0.5px solid #000000; */
     text-shadow: 0px 3px 2px #000000;
     position: ABSOLUTE;
-
-    left: calc(50% - 385px);
+   
 }
-
-@media (min-width: 576px) and (max-width: 768px) {
-    .banner-intro h1 {
-        top: 350px;
-        margin: 0 5%;
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .banner-intro h1 {
-        bottom: 50px;
-    }
-}
-
 
 /*********************************************/
-@media screen and (min-width: 769px) {
-    #search-section {
-        position: absolute;
-        width: var(--desktop-max-size);
-        height: 345px;
-    }
-
-    #price,
-    #bred {
-        width: fit-content;
-    }
-
-    #search-section #search-tabs,
-    #search-section .input-group,
-    #search-section #search-numeric-controls {
-        margin-bottom: 35px;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-    #search-section {
-        /* position: absolute; */
-        max-width: var(--tablet-max-size);
-        margin: 30px auto;
-        height: 410px;
-    }
-
-    #price,
-    #bred,
-    #compound-name {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    #search-section #search-tabs,
-    #search-section .input-group,
-    #search-section #search-numeric-controls {
-        margin-bottom: 20px;
-    }
-}
-
 #search-section {
 
     background-color: white;
-    padding: 24px;
+    /* padding: 24px; */
     border: 1px solid var(--badge-bg);
     border-radius: 16px;
     bottom: -300px;
@@ -160,7 +99,7 @@ input[type=number]::-webkit-outer-spin-button {
 /***********************************************/
 #featued-listing {
     background-color: var(--light-gray);
-    padding: 190px 0px;
+    
 }
 
 #featued-listing h2 {
@@ -187,8 +126,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .search-result-item {
-    width: 295px;
-    height: 292px;
+    /* width: 295px;
+    height: 292px; */
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -347,6 +286,4 @@ input[type=number]::-webkit-outer-spin-button {
 #journey-with-us-inner img{
     width: 50%;
 }
-
-
 /*****************************************/

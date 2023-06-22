@@ -11,17 +11,16 @@
     border-radius: 10px;
     position: relative;
     padding: 55px 15px;
-
 }
 
 .step-number {
     background: #FFFFFF;
-    font-size: 44px;
+    /* font-size: 44px; */
     font-weight: 700;
     color: var(--blue);
-    width: 75px;
-    height: 75px;
-    left: calc(50% - 38.5px);
+    /* width: 75px;
+    height: 75px; */
+    /* left: calc(50% - 38.5px); */
     top: -38.5px;
     border: 1px solid var(--badge-bg);
     position: absolute;
@@ -29,25 +28,22 @@
     text-align: center;
 }
 
-#sell-steps {
-    max-width: 960px;
-    margin: 116px auto;
-}
+
 
 .step-desc {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
+    /* font-size: 20px;
+    line-height: 25px; */
     color: var(--blue);
     text-align: center;
 }
 
-#sell-form {
+/* #sell-form {
     margin: 50px auto;
     max-width: 525px;
-}
+} */
 
 .sell-control-label {
     font-family: 'Inter';

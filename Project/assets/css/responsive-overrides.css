@@ -7,6 +7,10 @@
     #journey-with-us h2{
         font-size: 24px;
     }
+    #journey-with-us h2,
+    #journey-with-us-inner {
+        max-width: var(--mobile-max-size);
+    }
     #footer h5{
         font-size: 16px;
         line-height: 28px;
@@ -61,6 +65,27 @@
     }
     #featued-listing #features-header{
         max-width: var(--mobile-max-size);
+    }
+    #sell-form {
+        margin: 50px auto;
+        max-width: var(--mobile-max-size);
+    }
+    .step-number{
+        font-size: 28px;
+        width: 50px;
+        height: 50px;
+        left: calc(50% - 25px);
+    }
+    #sell-steps {
+        max-width: var(--mobile-max-size);
+        margin: 116px auto;
+    }
+    .step-desc {
+        font-size: 16px;
+        line-height: 25px; 
+    }
+    .steps {
+        
     }
 }
 
@@ -169,10 +194,30 @@
         margin-bottom: 35px;
     }
     #featued-listing{
-        padding: 190px 0px;
+        padding-top: 190px;
+        padding-bottom: 190px;
     }
     .search-result-item {
         width: 295px;
         height: 292px;
     }
+    #sell-form {
+        margin: 50px auto;
+        max-width: 525px;
+    }
+    .step-number{
+        font-size: 44px;
+        width: 75px;
+        height: 75px;
+        left: calc(50% - 38.5px);
+    }
+    #sell-steps {
+        max-width: var(--desktop-max-size);
+        margin: 116px auto;
+    }
+    .step-desc {
+        font-size: 20px;
+        line-height: 25px; 
+    }
+   
 }  

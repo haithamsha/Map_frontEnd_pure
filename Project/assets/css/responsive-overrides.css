@@ -75,17 +75,21 @@
         width: 50px;
         height: 50px;
         left: calc(50% - 25px);
+        top: -24.5px;
+    }
+    #sell-intro-container{
+        padding-bottom: 1px !important;
     }
     #sell-steps {
         max-width: var(--mobile-max-size);
-        margin: 116px auto;
+        margin: 60px auto;
     }
     .step-desc {
         font-size: 16px;
         line-height: 25px; 
     }
     .steps {
-        
+        width: 120px;
     }
 }
 
@@ -210,6 +214,7 @@
         width: 75px;
         height: 75px;
         left: calc(50% - 38.5px);
+        top: -38.5px;
     }
     #sell-steps {
         max-width: var(--desktop-max-size);

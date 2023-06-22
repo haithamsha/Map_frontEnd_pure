@@ -21,7 +21,7 @@
     /* width: 75px;
     height: 75px; */
     /* left: calc(50% - 38.5px); */
-    top: -38.5px;
+    
     border: 1px solid var(--badge-bg);
     position: absolute;
     border-radius: 100%;

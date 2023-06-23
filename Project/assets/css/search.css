@@ -21,11 +21,7 @@
     font-size: 20px;
     line-height: 42px;
 }
-#more-search-section{
-    width: 960px;
-    margin: 60px auto;
 
-}
 #more-search-section .search-lbl{
     font-family: 'Inter';
     font-style: normal;
@@ -47,8 +43,6 @@
 
 #search-result-section{
     background-color: white;
-    padding: 130px 250px;
-
 }
 #search-result-header{
     max-width: 960px;
@@ -58,19 +52,12 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
-    line-height: 42px;
+   
    position: relative;
 }
-#search-result-section #result-count{
-    font-size: 14px;
-    margin-bottom: 0px;
-    position: absolute;
-    right: -35px;
-    bottom: -5px;
-}
+
 #search-result-categories{
-    max-width: 960px;
+    /* max-width: 960px; */
     margin: 0 auto;
     margin-top: 50px;
 }

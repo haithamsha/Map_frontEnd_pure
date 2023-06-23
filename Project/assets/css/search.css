@@ -3,16 +3,13 @@
     left: calc(50% - 305px);
 }
 #search-filters{
-    padding: 75px 250px;
+    /* padding: 75px 250px; */
     background-color: var(--light-gray);
 }
 .banner-intro{
     height: auto !important;
 }
-#search-filters-widgets{
-    width: 960px;
-    margin: 0 auto;
-}
+
 #search-section{
     position: initial;
     margin: 0 auto;

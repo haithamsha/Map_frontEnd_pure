@@ -1,22 +1,16 @@
 .widget{
-    width: 151px;
+    
     height: 138px;
     border: 1px solid #948881;
     border-radius: 8px;
-    padding: 10px;
     text-align: center;
     margin-bottom: 35px;
 }
-.widget img{
-    width: 50px;
-    height: 50px;
-}
+
 .widget .title{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
     margin-top: 25px;
 }
 .widget-cat{
@@ -41,4 +35,31 @@
     color: white;
     background-color: var(--blue);
 }
-
+@media screen and (max-width: 576px) {
+    .widget{
+        padding: 10px 0px;
+        width: 90px;
+    }
+    .widget img{
+        width: 40px;
+        height: 40px;
+    }
+    .widget .title{
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+@media screen and (min-width: 769px) {
+    .widget img{
+        width: 50px;
+        height: 50px;
+    }
+    .widget .title{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .widget{
+        padding: 10px;
+        width: 150px;
+    }
+}

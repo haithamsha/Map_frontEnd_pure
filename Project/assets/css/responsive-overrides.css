@@ -102,6 +102,10 @@
     [dir="rtl"] #sell-intro-container h1{
         right: calc(50% - 180px) !important;
     }
+    #search-filters-widgets{
+        max-width: var(--mobile-max-size);
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -244,5 +248,12 @@
     }
     [dir="rtl"] #sell-intro-container h1{
         right: calc(50% - 350px) !important;
+    }
+    #search-filters-widgets{
+        max-width: var(--desktop-max-size);
+        margin: 0 auto;
+    }
+    #search-filters{
+        padding: 75px 250px;
     }
 }  

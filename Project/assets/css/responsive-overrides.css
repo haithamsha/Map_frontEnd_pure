@@ -151,6 +151,13 @@
     [dir="rtl"] #mobile-address-contact{
         display: none;
     }
+    #register-container-form{
+        max-width: var(--mobile-max-size);
+    }
+    #register-container-form .btn-reg-sign,
+    #or-register{
+        width: 350px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -339,5 +346,12 @@
     }
     #mobile-address-contact{
         display: none;
+    }
+    #register-container-form{
+        max-width: 784px;
+    }
+    #register-container-form .btn-reg-sign,
+    #or-register{
+        width: 460px;
     }
 }  

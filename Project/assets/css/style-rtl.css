@@ -36,6 +36,7 @@ body,
 #or-register p,
 #register-container-form .reg-instructions,
 .contact-control-label,
+.error-msg,
 #footer{
 font-family: dinregular !important;
 }

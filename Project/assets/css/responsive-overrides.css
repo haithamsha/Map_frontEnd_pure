@@ -158,7 +158,8 @@
     #or-register,
     #register-container-form .form-control,
     #register-container-form #forget-pass,
-    #register-container-form .reg-instructions{
+    #register-container-form .reg-instructions,
+    .error-msg{
         width: 350px;
     }
   
@@ -358,7 +359,8 @@
     #or-register,
     #register-container-form .form-control,
     #register-container-form #forget-pass,
-    #register-container-form .reg-instructions
+    #register-container-form .reg-instructions,
+    .error-msg
     {
         width: 460px;
     }

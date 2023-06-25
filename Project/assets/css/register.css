@@ -13,7 +13,7 @@
     line-height: 36px;
     color:rgba(55, 136, 191, 1);
     margin-bottom: 30px;
-    font-family: auto;
+    font-family: Inter;
     font-weight: 700;
 }
 
@@ -96,3 +96,14 @@
 {
     background-color: rgba(70, 136, 241, 1);
 }
+#register-container-form .reg-instructions{
+    text-align: center;
+    color: rgba(55, 136, 191, 1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Inter;
+    margin:0 auto 25px auto;
+
+}
+

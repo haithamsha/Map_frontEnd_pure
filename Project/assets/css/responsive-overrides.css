@@ -155,9 +155,12 @@
         max-width: var(--mobile-max-size);
     }
     #register-container-form .btn-reg-sign,
-    #or-register{
+    #or-register,
+    #register-container-form .form-control,
+    #register-container-form #forget-pass{
         width: 350px;
     }
+  
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -351,7 +354,10 @@
         max-width: 784px;
     }
     #register-container-form .btn-reg-sign,
-    #or-register{
+    #or-register,
+    #register-container-form .form-control,
+    #register-container-form #forget-pass
+    {
         width: 460px;
     }
 }  

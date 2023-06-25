@@ -79,3 +79,20 @@
     background-color: var(--light-gray);
     width: 150px;
 }
+#register-container-form .form-control{
+    margin: 0 auto;
+}
+#forget-pass{
+    font-family: Inter;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    color:rgba(0, 0, 0, 1);
+    text-align: start;
+    margin: 50px auto;
+}
+
+#register-container-form .blue-register
+{
+    background-color: rgba(70, 136, 241, 1);
+}

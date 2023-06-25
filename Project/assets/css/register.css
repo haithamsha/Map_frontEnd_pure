@@ -16,6 +16,7 @@
     font-family: auto;
     font-weight: 700;
 }
+
 .btn-reg-sign{
     /* width: 460px; */
     margin: 0 auto;
@@ -25,6 +26,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
+}
+[dir="rtl"] .btn-reg-sign,
+[dir="rtl"] #or-register p{
+    font-weight: 500;
+    font-size: 18px;
 }
 #register-inner-container{
     margin: 0 auto;

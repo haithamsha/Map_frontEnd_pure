@@ -4,6 +4,10 @@
     padding-top:150px;
     padding-bottom:150px;
 }
+#who-we-are{
+    background-color: var(--light-gray);
+  
+}
 #leaders{
     background-color: var(--light-gray);
     padding-top:50px;
@@ -11,7 +15,8 @@
 }
 #founders-inner,
 #leaders-inner,
-#core-value-inner {
+#core-value-inner,
+#who-we-are-inner {
     margin: 0 auto;
     text-align: center;
 }
@@ -20,7 +25,26 @@
 #core-value-inner h2{
     font-family: Inter;
 }
+@media screen and (max-width: 576px){
+    #who-we-are{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    #who-we-are-imgs img{
+        width: 185px;
+    }
+}
 @media screen and (min-width: 769px) {
+    #who-we-are{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    .banner-intro{
+        height: auto;
+    }
+    .banner-intro h1{
+        left: calc(50% - 106px);
+    }
     #founders {
         padding-top: 190px;
         padding-bottom: 190px;
@@ -28,7 +52,8 @@
 
     #founders h2,
     #leaders-inner h2,
-    #core-value-inner h2 {
+    #core-value-inner h2,
+    #who-we-are h2 {
         font-weight: 600;
         font-size: 36px;
         line-height: 42px;
@@ -37,10 +62,18 @@
 
     #founders-inner,
     #leaders-inner,
-    #core-value-inner {
+    #core-value-inner,
+    #who-we-are-inner  {
         max-width: var(--desktop-max-size);
     }
-   
+    #who-we-are .desc{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: Inter;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
     #leaders-inner .desc{
         font-weight: 500;
         font-size: 16px;
@@ -93,6 +126,31 @@
         font-size: 16px;
         line-height: 24px;
         max-width: 600px;
+        font-family: Inter;
     }
-    
+    #core-value-items div{
+        width: 250px;
+    }
+ 
+}
+#who-we-are-imgs .down{
+    margin-top: 50px;
+}
+#core-value-items div img{
+    height: 85px;
+}
+#core-value-items div h3{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+#core-value-items div p{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0px;
 }

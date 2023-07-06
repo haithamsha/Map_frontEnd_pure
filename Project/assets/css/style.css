@@ -5,6 +5,7 @@
     --light-gray: #F9F9FB;
     --gray-6: #F2F2F2;
     --light-blue: rgba(222, 227, 237, 1);
+    --desktop-max-lg-size: 1200px;
     --desktop-max-size: 960px;
     --tablet-max-size: 700px;
     --mobile-max-size: 380px;

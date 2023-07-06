@@ -1,0 +1,136 @@
+.banner-intro h1 {
+    left: calc(50% - 305px);
+}
+
+#search-filters {
+    /* padding: 75px 250px; */
+    background-color: var(--light-gray);
+}
+
+.banner-intro {
+    height: auto !important;
+}
+
+#search-section {
+    position: initial;
+    margin: 0 auto;
+}
+
+#more-search-section h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 42px;
+}
+
+#more-search-section .search-lbl {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    max-width: 125px;
+}
+
+#reset-div {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#reset-div a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#search-result-section {
+    background-color: white;
+}
+
+#search-result-header {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#search-result-section h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+
+    position: relative;
+}
+
+#unit-details-search-result-outer-container,
+#unit-details-suggested-outer-container {
+    background-color: var(--light-gray);
+    padding-top: 50px;
+}
+
+#unit-details-search-result-inner-container,
+#unit-details-desc-inner-container,
+#unit-details-suggested-inner-container {
+    margin: 0 auto;
+}
+
+#unit-details-search-result-header h2 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+#unit-details-desc-outer-container {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#unit-details-desc-inner-container h2 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#unit-details-desc-inner-container .header {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+#unit-details-desc-inner-container .desc {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+#unit-details-suggested-inner-container h2{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    #unit-details-search-result-inner-container,
+    #unit-details-desc-inner-container,
+    #unit-details-suggested-inner-container {
+        max-width: var(--desktop-max-lg-size);
+
+    }
+
+    #unit-details-search-result-categories>div:first-child {
+        width: 80%;
+    }
+
+    /* #unit-details-search-result-inner-container .search-result-item,
+    #unit-details-search-result-inner-container .beds{
+        width: 285px;
+    } */
+}

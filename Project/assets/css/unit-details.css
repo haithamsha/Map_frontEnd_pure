@@ -183,6 +183,7 @@
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    margin-top: 150px;
 }
 
 #unit-details-info-card-container #imags-container,
@@ -216,7 +217,84 @@
     background: var(--blue); 
     border-radius: 10px;
   }
-
+  #unit-details-basic-info{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  
+  #unit-details-basic-info #unit-info h2{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--blue); 
+  }
+  #unit-info-details{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  #unit-info-location{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  #unit-info-min-price{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--blue); 
+  }
+  #unit-info-price{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--red); 
+  }
+  #call-us-block,
+  #whatsapp-block{
+    display: flex;
+    align-items: end;
+    padding: 10px;
+  }
+  #call-us-block p,
+  #whatsapp-block p{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-inline: 10px;
+  }
+  #call-us-block p{
+    color: var(--red); 
+  }
+  #whatsapp-block p{
+    color: rgba(96, 214, 104, 1); 
+  }
+#unit-info-years{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+#unit-info-payment{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0px;
+    line-height: 14px;
+}
+#unit-info-period{
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 0px;
+    line-height: 14px;
+}
+  .blocks{
+    border: 1px solid var(--blue);
+    padding: 15px 10px;
+  }
 
 #unit-details-info-container h3 {
     color: rgba(162, 6, 17, 1);

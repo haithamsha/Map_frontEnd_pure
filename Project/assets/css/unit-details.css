@@ -79,7 +79,7 @@
     font-family: Inter;
     font-weight: 700;
     font-size: 20px;
-    line-height: 70px;
+    /* line-height: 70px; */
 }
 
 #unit-details-desc-outer-container {
@@ -142,7 +142,28 @@
     font-size: 10px;
     margin-top: 10px;
 }
-
+@media screen and (max-width: 768px) 
+{
+    #unit-details-basic-info{
+        flex-wrap: wrap;
+    }
+    /* #unit-details-info-card-container{
+        padding: 10px;
+    } */
+    #imags-container img:not(:first-child){
+        width: 46%;
+    }
+    #unit-details-info-card-container #unit-details-info-container {
+        padding: 10px 5px 50px 5px;
+    }
+    #unit-details-search-result-header h2{
+        line-height: 30px;
+    }
+    #unit-info-payment,
+    #unit-info-period{
+        line-height: 30px;
+    }
+}
 @media screen and (min-width: 1024px) {
 
     #unit-details-search-result-inner-container,
@@ -175,25 +196,38 @@
     #unit-details-info-card-container #unit-details-info-container {
         width: 49.5%;
     }
+    #unit-details-info-card-container{
+        padding: 15px;
+    }
+    #imags-container img:not(:first-child){
+        width: 47.5%;
+    }
+    #unit-details-info-card-container #unit-details-info-container {
+        padding: 10px 25px 50px 25px;
+    }
+    #unit-details-info-card-container {
+        width: 100%;
+        border: 1px solid rgba(148, 136, 129, 1);
+        
+        margin-top: 150px;
+    }
+    #unit-details-search-result-header h2{
+        line-height: 70xp;
+    }
+    #unit-info-payment,
+    #unit-info-period{
+        line-height: 14px;
+    }
 }
 
-#unit-details-info-card-container {
-    width: 100%;
-    border: 1px solid rgba(148, 136, 129, 1);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 150px;
-}
+
 
 #unit-details-info-card-container #imags-container,
 #unit-details-info-card-container #unit-details-info-container {
     border: 1px solid rgba(148, 136, 129, 1);
 }
 
-#unit-details-info-card-container #unit-details-info-container {
-    padding: 10px 25px 50px 25px;
-}
+
 #unit-details-info-card-container #imags-container{
     /* padding: 10px; */
     /* display: inline-table; */
@@ -221,6 +255,7 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
   }
   
   #unit-details-basic-info #unit-info h2{
@@ -282,14 +317,14 @@
     font-weight: 600;
     font-size: 24px;
     margin-bottom: 0px;
-    line-height: 14px;
+    /* line-height: 14px; */
 }
 #unit-info-period{
     font-family: Inter;
     font-weight: 300;
     font-size: 24px;
     margin-bottom: 0px;
-    line-height: 14px;
+    /* line-height: 14px; */
 }
   .blocks{
     border: 1px solid var(--blue);

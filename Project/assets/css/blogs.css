@@ -27,6 +27,7 @@
 }
 .publisher-info{
     margin-inline-start:10px;
+    text-align: start;
 }
 .blog-card-horizontal{
    margin-bottom: 50px;
@@ -60,6 +61,9 @@
     .blog-card-horizontal{
         width: 305px;
         margin-inline: auto;
+    }
+    .blog-card{
+        margin-bottom: 50px;
     }
 }
 
@@ -95,7 +99,7 @@
 }
 #social-media-container #social-media-icons-container{
     padding-inline-end: 10px;
-    border-right: 1px solid var(--light-blue);
+    border-inline-end: 1px solid var(--light-blue);
    
 }
 #social-media-outer-div{

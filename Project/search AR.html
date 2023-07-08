@@ -12,7 +12,7 @@
   <link href="assets/css/bootstrap/bootstrap.rtl.min.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
-  
+
   <link href="assets/css/header.css" rel="stylesheet">
   <link href="assets/css/footer.css" rel="stylesheet">
   <link href="assets/css/buttons-override.css" rel="stylesheet">
@@ -183,119 +183,129 @@
     </div>
     <div id="more-search-section">
       <div class="d-lg-flex justify-content-between">
-        <div class="d-flex justify-content-center justify-content-md-start">
-          <h3>خيارات اخرى <img src="assets/images/search/arrow-down.png"></h3>
+        <div class="d-flex justify-content-center justify-content-md-start col-lg-auto">
+
+          <a data-toggle="collapse" data-target="#collapseExample" style="color: black; text-decoration: none; cursor: pointer;">
+            <h3>خيارات اخرى <img src="assets/images/search/arrow-down.png"></h3>
+          </a>
         </div>
-       
-        <div class="d-flex justify-content-between mt-lg-5">
-          <div class="me-lg-5">
-            <p class="search-lbl">المساحة متر مربع (م٢)</p>
-            <div class="d-flex" >
-              <input type="number" class="form-control me-2" placeholder="Min" min="1" max="100">
-              <input type="number" class="form-control" placeholder="Max" min="1" max="100">
+        <div class="w-100 collapse" id="collapseExample">
+
+          <div class="d-md-flex justify-content-between">
+
+            <div class="d-flex justify-content-between mt-lg-5">
+              <div class="me-lg-5">
+                <p class="search-lbl">المساحة متر مربع (م٢)</p>
+                <div class="d-flex">
+                  <input type="number" class="form-control me-2" placeholder="Min" min="1" max="100">
+                  <input type="number" class="form-control" placeholder="Max" min="1" max="100">
+                </div>
+              </div>
+              <div>
+                <p class="search-lbl">أنواع التشطيب</p>
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio1" id="radio1">
+                    <label class="form-check-label" for="radio1">
+                      بدون تشطيب
+                    </label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio2" id="radio2" checked>
+                    <label class="form-check-label" for="radio2">
+                      تشطيب جزئي
+                    </label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio3" id="radio3" checked>
+                    <label class="form-check-label" for="radio3">
+                      تشطيب كامل
+                    </label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio4" id="radio4" checked>
+                    <label class="form-check-label" for="radio4">
+                      مفروش
+                    </label>
+                  </div>
+  
+                </div>
+              </div>
             </div>
-          </div>
-          <div>
-            <p class="search-lbl">أنواع التشطيب</p>
-            <div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio1" id="radio1">
-                <label class="form-check-label" for="radio1">
-                  بدون تشطيب
-                </label>
+  
+            <div class="d-flex justify-content-between mt-3 mt-lg-5">
+  
+              <div class="me-lg-5">
+                <p class="search-lbl">نوع البيع</p>
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Resale" id="Resale">
+                    <label class="form-check-label" for="Resale">
+                      إعادة بيع
+                    </label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Developer" id="Developer" checked>
+                    <label class="form-check-label" for="Developer">
+                      من المطور
+                    </label>
+                  </div>
+                </div>
               </div>
   
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio2" id="radio2" checked>
-                <label class="form-check-label" for="radio2">
-                  تشطيب جزئي
-                </label>
+  
+  
+              <div>
+                <p class="search-lbl">موعد التسليم</p>
+                <div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Now" id="Now">
+                    <label class="form-check-label" for="Now">
+                      جاهز للتسليم
+                    </label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="2024" id="2024" checked>
+                    <label class="form-check-label" for="2024">
+                      ٢٠٢٤
+                    </label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="2025" id="2025" checked>
+                    <label class="form-check-label" for="2025">
+                      ٢٠٢٥+
+                    </label>
+                  </div>
+  
+                </div>
               </div>
   
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio3" id="radio3" checked>
-                <label class="form-check-label" for="radio3">
-                  تشطيب كامل
-                </label>
-              </div>
   
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio4" id="radio4" checked>
-                <label class="form-check-label" for="radio4">
-                  مفروش
-                </label>
-              </div>
   
             </div>
           </div>
         </div>
-  
-        <div class="d-flex justify-content-between mt-3 mt-lg-5">
-        
-          <div class="me-lg-5">
-            <p class="search-lbl">نوع البيع</p>
-            <div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="Resale" id="Resale">
-                <label class="form-check-label" for="Resale">
-                  إعادة بيع
-                </label>
-              </div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="Developer" id="Developer" checked>
-                <label class="form-check-label" for="Developer">
-                  من المطور
-                </label>
-              </div>
-            </div>
-          </div>
-  
-  
-  
-          <div>
-            <p class="search-lbl">موعد التسليم</p>
-            <div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="Now" id="Now">
-                <label class="form-check-label" for="Now">
-                  جاهز للتسليم
-                </label>
-              </div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="2024" id="2024" checked>
-                <label class="form-check-label" for="2024">
-                  ٢٠٢٤
-                </label>
-              </div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="2025" id="2025" checked>
-                <label class="form-check-label" for="2025">
-                  ٢٠٢٥+
-                </label>
-              </div>
-  
-            </div>
-          </div>
-  
-  
-  
+        <div class="w-100" id="reset-div">
+          <img src="assets/images/search/reset.png"> <a>افتراضي</a>
         </div>
       </div>
-    <div class="w-100" id="reset-div">
-      <img src="assets/images/search/reset.png"> <a>افتراضي</a>
-    </div>
-   
+
+
     </div>
   </div>
 
   <div class="container-fluid" id="search-result-section">
 
     <div class="d-flex justify-content-between" id="search-result-header">
-      <h2>نتائج البحث <p id="result-count">544</p></h2>
+      <h2>نتائج البحث <p id="result-count">544</p>
+      </h2>
 
       <div class="dropdown">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuCompound"
@@ -366,7 +376,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
+          <p>٥ غرف. ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -394,7 +404,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
+          <p>٥ غرف. ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -422,7 +432,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
+          <p>٥ غرف. ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -452,7 +462,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
+          <p>٥ غرف. ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -480,7 +490,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
+          <p>٥ غرف. ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -508,7 +518,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
+          <p>٥ غرف. ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -537,7 +547,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
+          <p>٥ غرف. ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -565,7 +575,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
+          <p>٥ غرف. ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -593,7 +603,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between beds">
-          <p>٥ غرف.  ٥ حمام. ١٨٥ متر</p>
+          <p>٥ غرف. ٥ حمام. ١٨٥ متر</p>
           <img src="assets/images/landing-page/heart.png">
         </div>
       </div>
@@ -602,7 +612,7 @@
 
   </div>
 
- 
+
 
   <!-- Footer -->
   <div id="footer">
@@ -644,12 +654,14 @@
           <h5>مكاتبنا
           </h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 mb-lg-4"><b class="header-location">القاهرة الجديدة, مصر</b>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 mb-lg-4"><b class="header-location">القاهرة
+                  الجديدة, مصر</b>
               </a></li>
-            <li class="nav-item mb-2 mt-lg-5"><a href="#" class="nav-link p-0 "><b class="header-location">مدينة السادس من اكتوبر
-                  </b><br>
-                  مدينة السادس من اكتوبر, مصر
-                </a></li>
+            <li class="nav-item mb-2 mt-lg-5"><a href="#" class="nav-link p-0 "><b class="header-location">مدينة السادس
+                  من اكتوبر
+                </b><br>
+                مدينة السادس من اكتوبر, مصر
+              </a></li>
           </ul>
         </div>
 

@@ -74,6 +74,7 @@
         width: 150px;
         margin-bottom: 35px;
         height: 138px;
+        margin-inline-end: 10px;
     }
     .widget-cat .title,.widget-cat .number{
         font-size: 18px;

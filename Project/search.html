@@ -19,8 +19,8 @@
   <link href="assets/css/widget.css" rel="stylesheet">
   <link href="assets/css/search.css" rel="stylesheet">
   <!-- JavaScript Bundle with Popper -->
-  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -89,7 +89,7 @@
   <div class="container-fluid" id="search-filters">
 
 
-    <div class="d-flex flex-wrap justify-content-between" id="search-filters-widgets">
+    <div class="d-flex flex-wrap" id="search-filters-widgets">
       <div class="widget">
         <img src="assets/images/search/Apartment.png">
         <h3 class="title">Apartment</h3>
@@ -184,118 +184,138 @@
     <div id="more-search-section">
       <div class="d-lg-flex justify-content-between">
         <div class="d-flex justify-content-center justify-content-md-start">
-          <h3>More Filters <img src="assets/images/search/arrow-down.png"></h3>
+
+          <a data-toggle="collapse" data-target="#collapseExample" style="color: black; text-decoration: none;">
+            <h3>More Filters <img src="assets/images/search/arrow-down.png"></h3>
+          </a>
+
         </div>
-       
-        <div class="d-flex justify-content-between mt-lg-5">
-          <div class="me-lg-5">
-            <p class="search-lbl">Square Meter (M2)</p>
-            <div class="d-flex" >
-              <input type="number" class="form-control me-2" placeholder="Min" min="1" max="100">
-              <input type="number" class="form-control" placeholder="Max" min="1" max="100">
+
+        <div class="collapse" id="collapseExample">
+
+          <div class="d-flex justify-content-between">
+
+            <div class="d-flex justify-content-between mt-lg-5">
+              <div class="me-lg-5">
+                <p class="search-lbl">Square Meter (M2)</p>
+                <div class="d-flex">
+                  <input type="number" class="form-control me-2" placeholder="Min" min="1" max="100">
+                  <input type="number" class="form-control" placeholder="Max" min="1" max="100">
+                </div>
+              </div>
+              <div>
+                <p class="search-lbl">Finishing</p>
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio1" id="radio1">
+                    <label class="form-check-label" for="radio1">
+                      Not Finished
+                    </label>
+                  </div>
+          
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio2" id="radio2" checked>
+                    <label class="form-check-label" for="radio2">
+                      Semi Finished
+                    </label>
+                  </div>
+          
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio3" id="radio3" checked>
+                    <label class="form-check-label" for="radio3">
+                      Finished
+                    </label>
+                  </div>
+          
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio4" id="radio4" checked>
+                    <label class="form-check-label" for="radio4">
+                      Furnished
+                    </label>
+                  </div>
+          
+                </div>
+              </div>
             </div>
+          
+            <div class="d-flex justify-content-between mt-3 mt-lg-5">
+          
+              <div class="me-lg-5">
+                <p class="search-lbl">Sale Type</p>
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Resale" id="Resale">
+                    <label class="form-check-label" for="Resale">
+                      Resale
+                    </label>
+                  </div>
+          
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Developer" id="Developer" checked>
+                    <label class="form-check-label" for="Developer">
+                      Developer Sale
+                    </label>
+                  </div>
+                </div>
+              </div>
+          
+          
+          
+              <div>
+                <p class="search-lbl">Delivery Date</p>
+                <div>
+          
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Now" id="Now">
+                    <label class="form-check-label" for="Now">
+                      Now
+                    </label>
+                  </div>
+          
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="2024" id="2024" checked>
+                    <label class="form-check-label" for="2024">
+                      2024
+                    </label>
+                  </div>
+          
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="2025" id="2025" checked>
+                    <label class="form-check-label" for="2025">
+                      2025+
+                    </label>
+                  </div>
+          
+                </div>
+              </div>
+          
+          
+          
+            </div>
+
           </div>
-          <div>
-            <p class="search-lbl">Finishing</p>
-            <div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio1" id="radio1">
-                <label class="form-check-label" for="radio1">
-                  Not Finished
-                </label>
-              </div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio2" id="radio2" checked>
-                <label class="form-check-label" for="radio2">
-                  Semi Finished
-                </label>
-              </div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio3" id="radio3" checked>
-                <label class="form-check-label" for="radio3">
-                  Finished
-                </label>
-              </div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio4" id="radio4" checked>
-                <label class="form-check-label" for="radio4">
-                  Furnished
-                </label>
-              </div>
-  
-            </div>
+          <div class="w-100" id="reset-div">
+            <img src="assets/images/search/reset.png"> <a>Reset All</a>
           </div>
         </div>
-  
-        <div class="d-flex justify-content-between mt-3 mt-lg-5">
-        
-          <div class="me-lg-5">
-            <p class="search-lbl">Sale Type</p>
-            <div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="Resale" id="Resale">
-                <label class="form-check-label" for="Resale">
-                  Resale
-                </label>
-              </div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="Developer" id="Developer" checked>
-                <label class="form-check-label" for="Developer">
-                  Developer Sale
-                </label>
-              </div>
-            </div>
-          </div>
-  
-  
-  
-          <div>
-            <p class="search-lbl">Delivery Date</p>
-            <div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="Now" id="Now">
-                <label class="form-check-label" for="Now">
-                  Now
-                </label>
-              </div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="2024" id="2024" checked>
-                <label class="form-check-label" for="2024">
-                  2024
-                </label>
-              </div>
-  
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="2025" id="2025" checked>
-                <label class="form-check-label" for="2025">
-                  2025+
-                </label>
-              </div>
-  
-            </div>
-          </div>
-  
-  
-  
-        </div>
+
       </div>
-    <div class="w-100" id="reset-div">
-      <img src="assets/images/search/reset.png"> <a>Reset All</a>
-    </div>
    
+
     </div>
   </div>
+
+
+
+
+
+
 
   <div class="container-fluid" id="search-result-section">
 
     <div class="d-flex justify-content-between" id="search-result-header">
-      <h2>Search Results <p id="result-count">&nbsp;544</p></h2>
+      <h2>Search Results <p id="result-count">&nbsp;544</p>
+      </h2>
 
       <div class="dropdown">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuCompound"
@@ -341,7 +361,7 @@
         <p class="number">7</p>
       </div>
     </div>
-    <div class="d-flex flex-wrap justify-content-center">
+    <div class="d-flex flex-wrap justify-content-center justify-content-lg-between">
 
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item mb-3">
@@ -428,7 +448,7 @@
       </div>
     </div>
 
-    <div class="d-flex flex-wrap justify-content-center">
+    <div class="d-flex flex-wrap justify-content-center justify-content-lg-between">
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item">
 
@@ -513,7 +533,7 @@
         </div>
       </div>
     </div>
-    <div class="d-flex flex-wrap justify-content-center">
+    <div class="d-flex flex-wrap justify-content-center justify-content-lg-between">
       <div class="mb-3 search-result-item-container">
         <div class="search-result-item">
 
@@ -602,7 +622,7 @@
 
   </div>
 
- 
+
 
   <!-- Footer -->
   <div id="footer">

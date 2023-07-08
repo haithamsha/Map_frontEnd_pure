@@ -9,10 +9,15 @@
     font-size: 18px;
     text-align: start;
     margin-top: 10px;
-    height: 50px;
+    
 }
+.blog-card .publish-date{
+    margin-bottom: 0px;
+}
+
 .publisher{
     display: flex;
+    align-items: center;
 }
 .publisher-name{
     font-family: Inter;
@@ -24,5 +29,84 @@
     margin-inline-start:10px;
 }
 .blog-card-horizontal{
+   margin-bottom: 50px;
+}
+
+.blog-card-horizontal .title{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+}
+.blog-card-horizontal .publisher-name{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+}
+.blog-card-horizontal .publish-date
+{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 576px){
+    .blog-card{
+        margin: 0 auto;
+    }
+    #recet-posts-inner h2{
+        text-align: center;
+    }
+    .blog-card-horizontal{
+        width: 305px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 769px){
+    [dir="ltr"] .banner-intro h1{
+        left: calc(50% - 85px);
+    }
+    .blog-card .title{
+        height: 50px;
+    }
+    #social-media-outer-div{
+        margin-bottom: -80px;
+    }
+}
+
+
+#recet-posts-inner  {
+    max-width: var(--desktop-max-size);
+    margin: 0 auto;
+    
+    padding-bottom: 150px;
+}
+#recet-posts-inner h2{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+#social-media-container #header{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+}
+#social-media-container #social-media-icons-container{
+    padding-inline-end: 10px;
+    border-right: 1px solid var(--light-blue);
    
+}
+#social-media-outer-div{
+    padding-top: 50px;
+    padding-inline-end: 50px;
+    
+}
+#social-media-container #email{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    color:var(--blue);
+    margin-inline-start: 10px;
 }

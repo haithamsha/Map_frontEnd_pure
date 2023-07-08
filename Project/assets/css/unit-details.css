@@ -163,6 +163,14 @@
     #unit-info-period{
         line-height: 30px;
     }
+    #unit-details-info-container>h3:first-child {
+        margin-bottom: 25px;
+    }
+
+    #unit-details-info-container h3:nth-child(n+2) {
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
 }
 @media screen and (min-width: 1024px) {
 

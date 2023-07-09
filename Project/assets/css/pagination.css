@@ -1,0 +1,34 @@
+#pagination-container {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#pagination-container #selected-page {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(162, 6, 17, 1);
+}
+
+#pagination-container a {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(148, 136, 129, 1);
+}
+
+#pagination-container #next-btn {
+    background-color: var(--blue);
+    padding: 10px 14px;
+}
+
+#pagination-container #previous-btn {
+    background-color: var(--blue);
+    padding: 10px 14px;
+}
+#pagination-container a{
+    cursor: pointer;
+}

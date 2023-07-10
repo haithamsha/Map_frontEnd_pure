@@ -31,10 +31,10 @@
 .widget-cat .number{
     margin-bottom: 0px;
 }
-.selected{
+/* .selected{
     color: white;
     background-color: var(--blue);
-}
+} */
 @media screen and (max-width: 576px) {
     .widget{
         padding: 10px 0px;
@@ -83,6 +83,6 @@
     }
     .widget-cat{
         width: 151px;
-        padding: 5px 15px;
+        /* padding: 5px 15px; */
     }
 }

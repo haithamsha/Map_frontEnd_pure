@@ -61,3 +61,16 @@
     margin: 0 auto;
     margin-top: 50px;
 }
+#search-result-categories .nav-item button{
+    width: 100%;
+}
+#search-result-categories .nav-link.active, #search-result-categories .show>.nav-link{
+    background-color:var(--blue);
+}
+
+#search-result-categories  .nav-link{
+color:black;
+}
+#search-result-categories  .active{
+    color:white;
+}

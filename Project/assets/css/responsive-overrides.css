@@ -311,9 +311,10 @@
         max-width: var(--desktop-max-size);
         margin: 0 auto;
     }
-    #search-filters{
-        padding: 75px 250px;
-    }
+     #search-filters{
+        padding-top: 75px;
+        /* padding-bottom: 25px; */
+    } 
     #search-result-section{
         max-width: var(--desktop-max-size);
     }

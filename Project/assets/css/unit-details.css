@@ -207,9 +207,9 @@
     #unit-details-info-card-container{
         padding: 15px;
     }
-    #imags-container img:not(:first-child){
+    /* #imags-container img:not(:first-child){
         width: 47.5%;
-    }
+    } */
     #unit-details-info-card-container #unit-details-info-container {
         padding: 10px 25px 50px 25px;
     }
@@ -241,10 +241,10 @@
     /* display: inline-table; */
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 811px;
+    max-height: 860px;
 }
 #unit-details-info-card-container #imags-container img{
-    margin: 5px;
+    /* margin: 5px; */
     /* width: 100%; */
 }
 /* width */

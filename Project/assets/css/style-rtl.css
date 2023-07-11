@@ -2,10 +2,10 @@
     font-family: dinregular;
     src: url(../fonts/Arabic/din-next-lt-w23-regular.ttf);
 }
-.banner-intro h1{
+/* .banner-intro h1{
     right: calc(50% - 192px);
     width: fit-content;
-}
+} */
 #search-section .input-group-text{
     border-left: 0px;
     border-right:1px solid #ced4da;

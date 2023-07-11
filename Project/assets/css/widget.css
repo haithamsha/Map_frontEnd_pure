@@ -56,8 +56,11 @@
         font-weight: 300;
     }
     .widget-cat{
-        width: 60px;
-        padding: 5px 0px;
+        width: 68px;
+         
+    }
+    #search-result-categories .nav-link{
+        padding-inline: 0px;
     }
 }
 @media screen and (min-width: 769px) {

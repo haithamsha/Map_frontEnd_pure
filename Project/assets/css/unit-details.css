@@ -344,14 +344,14 @@ color:black;
     font-weight: 600;
     font-size: 24px;
     margin-bottom: 0px;
-    /* line-height: 14px; */
+    line-height: 25px;
 }
 #unit-info-period{
     font-family: Inter;
     font-weight: 300;
     font-size: 24px;
     margin-bottom: 0px;
-    /* line-height: 14px; */
+    line-height: 25px;
 }
   .blocks{
     border: 1px solid var(--blue);

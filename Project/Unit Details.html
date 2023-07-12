@@ -306,43 +306,69 @@
   <div class="container-fluid" id="unit-details-search-result-outer-container">
     <div id="unit-details-search-result-inner-container">
 
-      <div class="d-flex flex-wrap justify-content-between" id="unit-details-search-result-header">
+      <div class="d-flex flex-wrap justify-content-between align-items-center" id="unit-details-search-result-header">
 
         <h2 class="col-lg-12 col-7 order-0">Explore Properties In Mountain View ICity New Cairo
         </h2>
 
-        <div class="d-flex justify-content-between order-2 order-lg-1">
-          <div class="widget-cat selected">
-            <h3 class="title">Apartment</h3>
-            <p class="number">10</p>
-          </div>
-
-          <div class="widget-cat">
-            <h3 class="title">Villa</h3>
-            <p class="number">2</p>
-          </div>
-
-          <div class="widget-cat">
-            <h3 class="title">Duplex</h3>
-            <p class="number">15</p>
-          </div>
-
-          <div class="widget-cat">
-            <h3 class="title">Townhouse</h3>
-            <p class="number">4</p>
-          </div>
-
-          <div class="widget-cat">
-            <h3 class="title">Office</h3>
-            <p class="number">5</p>
-          </div>
-
-          <div class="widget-cat">
-            <h3 class="title">Clinic</h3>
-            <p class="number">7</p>
-          </div>
-        </div>
-
+        <ul class="nav nav-pills justify-content-between mb-3 order-2 order-lg-1 col-lg-10" id="search-result-categories" role="tablist">
+          <li class="nav-item widget-cat" role="presentation">
+            <button class="nav-link active" id="pills-apartment-tab" data-bs-toggle="pill" data-bs-target="#pills-apartment" type="button" 
+            role="tab" aria-controls="pills-apartment" aria-selected="true">
+            <div class=" selected">
+              <h3 class="title">Apartment</h3>
+              <p class="number">10</p>
+            </div>
+          </button>
+          </li>
+          <li class="nav-item widget-cat" role="presentation">
+            <button class="nav-link" id="pills-villa-tab" data-bs-toggle="pill" data-bs-target="#pills-villa" type="button" 
+            role="tab" aria-controls="pills-villa" aria-selected="false">
+            <div class="">
+              <h3 class="title">Villa</h3>
+              <p class="number">2</p>
+            </div>
+          </button>
+          </li>
+          <li class="nav-item widget-cat" role="presentation">
+            <button class="nav-link" id="pills-duplex-tab" data-bs-toggle="pill" data-bs-target="#pills-duplex" type="button" 
+            role="tab" aria-controls="pills-duplex" aria-selected="false">
+            <div class="">
+              <h3 class="title">Duplex</h3>
+              <p class="number">15</p>
+            </div>
+          </button>
+          </li>
+          <li class="nav-item widget-cat" role="presentation">
+            <button class="nav-link" id="pills-townhouse-tab" data-bs-toggle="pill" data-bs-target="#pills-townhouse" type="button" 
+            role="tab" aria-controls="pills-townhouse" aria-selected="false">
+            <div class="">
+              <h3 class="title">Townhouse</h3>
+              <p class="number">4</p>
+            </div>
+          </button>
+          </li>
+    
+          <li class="nav-item widget-cat" role="presentation">
+            <button class="nav-link"  id="pills-office-tab" data-bs-toggle="pill" data-bs-target="#pills-office" type="button" 
+            role="tab" aria-controls="pills-office" aria-selected="false">
+            <div class="">
+              <h3 class="title">Office</h3>
+              <p class="number">5</p>
+            </div>
+          </button>
+          </li>
+    
+          <li class="nav-item widget-cat" role="presentation">
+            <button class="nav-link"  id="pills-clinic-tab" data-bs-toggle="pill" data-bs-target="#pills-clinic" type="button" 
+            role="tab" aria-controls="pills-clinic" aria-selected="false">
+            <div class="">
+              <h3 class="title">Clinic</h3>
+              <p class="number">7</p>
+            </div>
+          </button>
+          </li>
+        </ul>
         <div class="order-1 order-lg-2 dropdown col-5 col-lg-2 text-end">
           <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuCompound"
             data-bs-toggle="dropdown" aria-expanded="false">
@@ -357,363 +383,514 @@
 
       </div>
 
+      <div  class="tab-content ">
 
-      <div class="d-flex justify-content-between" id="unit-details-search-result-categories">
+        <div class="tab-pane fade" id="pills-townhouse" role="tabpanel" aria-labelledby="pills-townhouse-tab">
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+            <div class="mb-3 search-result-item-container">
+              <div class="search-result-item mb-3">
         
-
-      </div>
-
-
-      <div class="d-flex flex-wrap justify-content-between">
-
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item mb-3">
-
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
               </div>
-              <div class="location">
-                6th of October City
-              </div>
-            </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
-              </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
               </div>
             </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
+
           </div>
         </div>
 
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
+        <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+            <div class="mb-3 search-result-item-container ">
+              <div class="search-result-item mb-3">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
+              </div>
+            </div>
+        
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
+              </div>
+            </div>
 
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
               </div>
-              <div class="location">
-                6th of October City
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
               </div>
             </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
-              </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
           </div>
         </div>
 
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
+        <div class="tab-pane fade " id="pills-clinic" role="tabpanel" aria-labelledby="pills-clinic-tab">
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+            <div class="mb-3 search-result-item-container ">
+              <div class="search-result-item mb-3">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
+              </div>
+            </div>
+        
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
+              </div>
+            </div>
 
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
               </div>
-              <div class="location">
-                6th of October City
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
               </div>
             </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
+
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
               </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
               </div>
             </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
+
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
+        <div class="tab-pane fade" id="pills-duplex" role="tabpanel" aria-labelledby="pills-duplex-tab">
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
 
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
+            <div class="mb-3 search-result-item-container">
+              <div class="search-result-item mb-3">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
               </div>
-              <div class="location">
-                6th of October City
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
               </div>
             </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
+        
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
               </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
               </div>
             </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
+          
           </div>
         </div>
 
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
+        <div class="tab-pane fade show active" id="pills-apartment" role="tabpanel" aria-labelledby="pills-apartment-tab">
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+            <div class="mb-3 search-result-item-container ">
+              <div class="search-result-item mb-3">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
+              </div>
+            </div>
+        
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
+              </div>
+            </div>
 
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
               </div>
-              <div class="location">
-                6th of October City
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
               </div>
             </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
+
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
               </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
               </div>
             </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
           </div>
         </div>
 
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
+        <div class="tab-pane fade" id="pills-villa" role="tabpanel" aria-labelledby="pills-villa-tab">
+        
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
 
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
+            <div class="mb-3 search-result-item-container ">
+              <div class="search-result-item mb-3">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
               </div>
-              <div class="location">
-                6th of October City
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
               </div>
             </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
+
+            <div class="mb-3 search-result-item-container ms-lg-1">
+              <div class="search-result-item">
+        
+                <div class="badge-top d-flex align-items-center justify-content-between">
+                  <div class="status">
+                    <img src="assets/images/landing-page/ph_house.png">
+                    Sold
+                  </div>
+                  <div class="location">
+                    6th of October City
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 badge-bottom">
+                  <div class="price">
+                    5,800,000 EGP
+                  </div>
+                  <div class="contact d-flex justify-content-between">
+                    <img src="assets/images/landing-page/phone.png">
+                    <img src="assets/images/landing-page/whatsapp-icon.png">
+                  </div>
+                </div>
               </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
+              <div class="d-flex justify-content-between beds">
+                <p>5 Beds 5 Baths 5090 SqFt</p>
+                <img src="assets/images/landing-page/heart.png">
               </div>
             </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
+
           </div>
         </div>
-
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
-
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
-              </div>
-              <div class="location">
-                6th of October City
-              </div>
-            </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
-              </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
-          </div>
-        </div>
-
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
-
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
-              </div>
-              <div class="location">
-                6th of October City
-              </div>
-            </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
-              </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
-          </div>
-        </div>
-
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
-
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
-              </div>
-              <div class="location">
-                6th of October City
-              </div>
-            </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
-              </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
-          </div>
-        </div>
-
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
-
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
-              </div>
-              <div class="location">
-                6th of October City
-              </div>
-            </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
-              </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
-          </div>
-        </div>
-
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
-
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
-              </div>
-              <div class="location">
-                6th of October City
-              </div>
-            </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
-              </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
-          </div>
-        </div>
-
-        <div class="mb-3 search-result-item-container mx-auto">
-          <div class="search-result-item">
-
-            <div class="badge-top d-flex align-items-center justify-content-between">
-              <div class="status">
-                <img src="assets/images/landing-page/ph_house.png">
-                Sold
-              </div>
-              <div class="location">
-                6th of October City
-              </div>
-            </div>
-            <div class="d-flex justify-content-between w-100 badge-bottom">
-              <div class="price">
-                5,800,000 EGP
-              </div>
-              <div class="contact d-flex justify-content-between">
-                <img src="assets/images/landing-page/phone.png">
-                <img src="assets/images/landing-page/whatsapp-icon.png">
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between beds">
-            <p>5 Beds 5 Baths 5090 SqFt</p>
-            <img src="assets/images/landing-page/heart.png">
-          </div>
-        </div>
-        <div id="pagination-container">
-          <a id="previous-btn">
-            <img src="assets/images/pagination/prev-icon.png" />
-          </a>
-          <a id="selected-page">1</a>
-          <a>2</a>
-          <a>3</a>
-          <a>4</a>
-          <a id="next-btn">
-            <img src="assets/images/pagination/next-icon.png" />
-          </a>
-        </div>
-      </div>
+    </div>
 
     </div>
   </div>

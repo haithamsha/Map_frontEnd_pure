@@ -132,10 +132,18 @@ input[type=number]::-webkit-outer-spin-button {
     overflow: hidden;
     position: relative;
     padding: 10px;
-    background-image: url(../images/landing-page/building.jpeg);
+    /*background-image: url(../images/landing-page/building.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover;*/
+}
+.search-result-item-bg-img {
+    width: 295px;
+    height: 292px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
 }
 
 .search-result-item .badge-top {
@@ -151,15 +159,15 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 15px;
 }
 
-.search-result-item .badge-top,
-.search-result-item .badge-bottom .price,
-.search-result-item .badge-bottom .contact {
-    background-color: var(--light-blue);
-
-    border-radius: 5px;
-    height: 30px;
-    padding: 3px;
-}
+    .search-result-item .badge-top,
+    .search-result-item .badge-bottom .price,
+    .search-result-item .badge-bottom .contact {
+        background-color: var(--light-blue);
+        border-radius: 5px;
+        height: 30px;
+        padding: 3px;
+        position: relative;
+    }
 
 .search-result-item .badge-bottom .price {
     font-size: 18px;
@@ -179,7 +187,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .search-result-item .badge-top {
-    top: 15px;
+   /* top: 15px;*/
     padding: 3px;
 }
 

@@ -90,222 +90,240 @@
 
   <div class="container-fluid" id="search-filters">
 
+      <div class="btn-group d-flex flex-wrap" role="group" aria-label="Basic checkbox toggle button group" id="search-filters-widgets">
+          <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck1">
+              <img src="assets/images/search/Apartment.png">
+              <h3 class="title">Apartment</h3>
+          </label>
 
-    <div class="d-flex flex-wrap" id="search-filters-widgets">
-      <div class="widget">
-        <img src="assets/images/search/Apartment.png">
-        <h3 class="title">Apartment</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/villa.png">
-        <h3 class="title">Villa</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/Twin.png">
-        <h3 class="title">Twinhouse</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/Town.png">
-        <h3 class="title">Townhouse</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/Cabin.png">
-        <h3 class="title">Cabin</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/Clinic.png">
-        <h3 class="title">Clinic</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/Duplex.png">
-        <h3 class="title">Duplex</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/penthouse.png">
-        <h3 class="title">Penthouse</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/Chalet.png">
-        <h3 class="title">Chalet</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/Studio.png">
-        <h3 class="title">Studio</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/Office.png">
-        <h3 class="title">Office</h3>
-      </div>
-      <div class="widget">
-        <img src="assets/images/search/Retail.png">
-        <h3 class="title">Retail</h3>
-      </div>
-    </div>
+          <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck2">
+              <img src="assets/images/search/villa.png">
+              <h3 class="title">Villa</h3>
+          </label>
 
-    <div id="search-section" class="text-center">
-      <div id="search-tabs">
-        <button class="btn" type="button">Buy</button>
-        <button class="btn ms-lg-4" type="button">Rent</button>
+          <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck3">
+              <img src="assets/images/search/Twin.png">
+              <h3 class="title">Twinhouse</h3>
+          </label>
+          <input type="checkbox" class="btn-check" id="btncheck12" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck12">
+              <img src="assets/images/search/Town.png">
+              <h3 class="title">Townhouse</h3>
+          </label>
+          <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck4">
+              <img src="assets/images/search/Cabin.png">
+              <h3 class="title">Cabin</h3>
+          </label>
+
+          <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck5">
+              <img src="assets/images/search/Clinic.png">
+              <h3 class="title">Clinic</h3>
+          </label>
+
+          <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck6">
+              <img src="assets/images/search/Duplex.png">
+              <h3 class="title">Duplex</h3>
+          </label>
+
+          <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck7">
+              <img src="assets/images/search/penthouse.png">
+              <h3 class="title">Penthouse</h3>
+          </label>
+          <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck8">
+              <img src="assets/images/search/Chalet.png">
+              <h3 class="title">Chalet</h3>
+          </label>
+          <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck9">
+              <img src="assets/images/search/Studio.png">
+              <h3 class="title">Studio</h3>
+          </label>
+
+          <input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck10">
+              <img src="assets/images/search/Office.png">
+              <h3 class="title">Office</h3>
+          </label>
+          <input type="checkbox" class="btn-check" id="btncheck11" autocomplete="off">
+          <label class="btn btn-outline-primary widget" for="btncheck11">
+              <img src="assets/images/search/Retail.png">
+              <h3 class="title">Retail</h3>
+          </label>
+
       </div>
 
-      <div class="input-group">
-        <span class="input-group-text"><img src="assets/images/landing-page/map-logo.png"></span>
-        <input type="text" class="form-control" placeholder="Address, City or Zip" id="search-txt"
-          aria-describedby="search-btn">
-        <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
-      </div>
-
-      <div id="search-numeric-controls" class="d-lg-flex justify-content-lg-between">
-
-        <div class="d-flex justify-content-center" id="price">
-          <input type="number" class="form-control" placeholder="Min Price" min="1" max="100">
-          <input type="number" class="form-control ms-2" placeholder="Max Price" min="1" max="100">
-        </div>
-
-        <div class="d-flex justify-content-center" id="bred">
-          <input type="number" class="form-control" placeholder="Breds" min="1" max="100">
-          <input type="number" class="form-control ms-2" placeholder="Baths" min="1" max="100">
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuCompound" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Choose a Compound
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuCompound">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+      <div id="search-section" class="text-center">
+          <div id="search-tabs">
+              <button class="btn" type="button">Buy</button>
+              <button class="btn ms-lg-4" type="button">Rent</button>
           </div>
-        </div>
 
-      </div>
+          <div class="input-group">
+              <span class="input-group-text"><img src="assets/images/landing-page/map-logo.png"></span>
+              <input type="text" class="form-control" placeholder="Address, City or Zip" id="search-txt"
+                     aria-describedby="search-btn">
+              <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
+          </div>
 
-    </div>
-    <div id="more-search-section">
-      <div class="d-lg-flex justify-content-between">
-        <div class="d-flex justify-content-center justify-content-md-start col-lg-auto">
+          <div id="search-numeric-controls" class="d-lg-flex justify-content-lg-between">
 
-          <a data-toggle="collapse" data-target="#collapseExample"
-            style="color: black; text-decoration: none; cursor: pointer;">
-            <h3>More Filters <img src="assets/images/search/arrow-down.png"></h3>
-          </a>
-
-        </div>
-
-        <div class="w-100 collapse pb-3" id="collapseExample">
-
-          <div class="d-md-flex justify-content-between">
-
-            <div class="d-flex justify-content-between mt-lg-5">
-              <div class="me-lg-5">
-                <p class="search-lbl">Square Meter (M2)</p>
-                <div class="d-flex">
-                  <input type="number" class="form-control me-2" placeholder="Min" min="1" max="100">
-                  <input type="number" class="form-control" placeholder="Max" min="1" max="100">
-                </div>
-              </div>
-              <div>
-                <p class="search-lbl">Finishing</p>
-                <div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radio1" id="radio1">
-                    <label class="form-check-label" for="radio1">
-                      Not Finished
-                    </label>
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radio2" id="radio2" checked>
-                    <label class="form-check-label" for="radio2">
-                      Semi Finished
-                    </label>
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radio3" id="radio3" checked>
-                    <label class="form-check-label" for="radio3">
-                      Finished
-                    </label>
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radio4" id="radio4" checked>
-                    <label class="form-check-label" for="radio4">
-                      Furnished
-                    </label>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="d-flex justify-content-between mt-3 mt-lg-5">
-
-              <div class="me-lg-5">
-                <p class="search-lbl">Sale Type</p>
-                <div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="Resale" id="Resale">
-                    <label class="form-check-label" for="Resale">
-                      Resale
-                    </label>
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="Developer" id="Developer" checked>
-                    <label class="form-check-label" for="Developer">
-                      Developer Sale
-                    </label>
-                  </div>
-                </div>
+              <div class="d-flex justify-content-center" id="price">
+                  <input type="number" class="form-control" placeholder="Min Price" min="1" max="100">
+                  <input type="number" class="form-control ms-2" placeholder="Max Price" min="1" max="100">
               </div>
 
-
-
-              <div>
-                <p class="search-lbl">Delivery Date</p>
-                <div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="Now" id="Now">
-                    <label class="form-check-label" for="Now">
-                      Now
-                    </label>
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="2024" id="2024" checked>
-                    <label class="form-check-label" for="2024">
-                      2024
-                    </label>
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="2025" id="2025" checked>
-                    <label class="form-check-label" for="2025">
-                      2025+
-                    </label>
-                  </div>
-
-                </div>
+              <div class="d-flex justify-content-center" id="bred">
+                  <input type="number" class="form-control" placeholder="Breds" min="1" max="100">
+                  <input type="number" class="form-control ms-2" placeholder="Baths" min="1" max="100">
               </div>
-
-
-
-            </div>
+              <div class="d-flex justify-content-center">
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuCompound" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                          Choose a Compound
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuCompound">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                  </div>
+              </div>
 
           </div>
-          <div class="w-100" id="reset-div">
-            <img src="assets/images/search/reset.png"> <a>Reset All</a>
-          </div>
-        </div>
 
       </div>
+      <div id="more-search-section">
+          <div class="d-lg-flex justify-content-between">
+              <div class="d-flex justify-content-center justify-content-md-start col-lg-auto">
+
+                  <a data-toggle="collapse" data-target="#collapseExample"
+                     style="color: black; text-decoration: none; cursor: pointer;">
+                      <h3>More Filters <img src="assets/images/search/arrow-down.png"></h3>
+                  </a>
+
+              </div>
+
+              <div class="w-100 collapse pb-3" id="collapseExample">
+
+                  <div class="d-md-flex justify-content-between">
+
+                      <div class="d-flex justify-content-between mt-lg-5">
+                          <div class="me-lg-5">
+                              <p class="search-lbl">Square Meter (M2)</p>
+                              <div class="d-flex">
+                                  <input type="number" class="form-control me-2" placeholder="Min" min="1" max="100">
+                                  <input type="number" class="form-control" placeholder="Max" min="1" max="100">
+                              </div>
+                          </div>
+                          <div>
+                              <p class="search-lbl">Finishing</p>
+                              <div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="radio1" id="radio1">
+                                      <label class="form-check-label" for="radio1">
+                                          Not Finished
+                                      </label>
+                                  </div>
+
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="radio2" id="radio2" checked>
+                                      <label class="form-check-label" for="radio2">
+                                          Semi Finished
+                                      </label>
+                                  </div>
+
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="radio3" id="radio3" checked>
+                                      <label class="form-check-label" for="radio3">
+                                          Finished
+                                      </label>
+                                  </div>
+
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="radio4" id="radio4" checked>
+                                      <label class="form-check-label" for="radio4">
+                                          Furnished
+                                      </label>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between mt-3 mt-lg-5">
+
+                          <div class="me-lg-5">
+                              <p class="search-lbl">Sale Type</p>
+                              <div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="Resale" id="Resale">
+                                      <label class="form-check-label" for="Resale">
+                                          Resale
+                                      </label>
+                                  </div>
+
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="Developer" id="Developer" checked>
+                                      <label class="form-check-label" for="Developer">
+                                          Developer Sale
+                                      </label>
+                                  </div>
+                              </div>
+                          </div>
 
 
-    </div>
+
+                          <div>
+                              <p class="search-lbl">Delivery Date</p>
+                              <div>
+
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="Now" id="Now">
+                                      <label class="form-check-label" for="Now">
+                                          Now
+                                      </label>
+                                  </div>
+
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="2024" id="2024" checked>
+                                      <label class="form-check-label" for="2024">
+                                          2024
+                                      </label>
+                                  </div>
+
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="2025" id="2025" checked>
+                                      <label class="form-check-label" for="2025">
+                                          2025+
+                                      </label>
+                                  </div>
+
+                              </div>
+                          </div>
+
+
+
+                      </div>
+
+                  </div>
+                  <div class="w-100" id="reset-div">
+                      <img src="assets/images/search/reset.png"> <a>Reset All</a>
+                  </div>
+              </div>
+
+          </div>
+
+
+      </div>
   </div>
 
 

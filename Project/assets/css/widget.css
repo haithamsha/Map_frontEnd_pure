@@ -2,7 +2,7 @@
     
   
     border: 1px solid #948881;
-    border-radius: 8px;
+    border-radius: 8px !important;
     text-align: center;
   
 }
@@ -88,4 +88,16 @@
         width: 151px;
         /* padding: 5px 15px; */
     }
+}
+#search-filters-widgets .btn{
+    color:black;
+}
+#search-filters-widgets .btn-check:checked + .btn,
+#search-filters-widgets .btn.active,
+#search-filters-widgets .btn.show,
+#search-filters-widgets .btn:first-child:active,
+#search-filters-widgets :not(.btn-check) + .btn:active {
+    color: white !important;
+    background-color: var(--blue);
+    border-color: var(--blue);
 }

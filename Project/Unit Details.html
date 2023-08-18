@@ -19,6 +19,7 @@
     <link href="assets/css/widget.css" rel="stylesheet">
     <link href="assets/css/unit-details.css" rel="stylesheet">
     <link href="assets/css/pagination.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -29,1241 +30,1272 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-md navbar-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo"
-          aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo"
+                        aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <a class="navbar-brand" href="#"><img src="assets/images/logo/map-logo-red.png"></a>
+                <a class="navbar-brand" href="#"><img src="assets/images/logo/map-logo-red.png"></a>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo">
-          <ul class="navbar-nav mx-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item mx-md-2">
-              <a class="nav-link" href="#">Search</a>
-            </li>
-            <li class="nav-item mx-md-2">
-              <a class="nav-link">Sell</a>
-            </li>
-            <li class="nav-item mx-md-2">
-              <a class="nav-link">About Us</a>
-            </li>
-            <li class="nav-item mx-md-2">
-              <a class="nav-link">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Blog</a>
-            </li>
-          </ul>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a class="nav-link" href="#">Search</a>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a class="nav-link">Sell</a>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Blog</a>
+                        </li>
+                    </ul>
 
-          <ul class="navbar-nav mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">English</a>
-            </li>
-            <li class="nav-item me-lg-2">
-              <a class="nav-link">Sing In</a>
-            </li>
-            <li class="nav-item">
-              <button class="btn" type="button">Register</button>
-            </li>
-          </ul>
+                    <ul class="navbar-nav mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">English</a>
+                        </li>
+                        <li class="nav-item me-lg-2">
+                            <a class="nav-link">Sing In</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn" type="button">Register</button>
+                        </li>
+                    </ul>
 
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+
+    <div class="container-fluid p-0 banner-intro" id="search-header-banner">
+        <div class="banner-inner-intro">
+            <img src="assets/images/unit-details/unit-details-bg.png" class="banner-img">
         </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Header -->
 
-  <div class="container-fluid p-0 banner-intro" id="search-header-banner">
-    <div class="banner-inner-intro">
-      <img src="assets/images/unit-details/unit-details-bg.png" class="banner-img">
     </div>
 
-  </div>
+
+    <div class="container-fluid" id="unit-details-info-outer-container">
+        <div id="unit-details-info-inner-container">
 
 
-  <div class="container-fluid" id="unit-details-info-outer-container">
-    <div id="unit-details-info-inner-container">
+            <div id="unit-details-basic-info">
 
-
-      <div id="unit-details-basic-info">
-
-        <div class="order-0 my-3 my-sm-0">
-          <img src="assets/images/unit-details/dmg-logo.png" />
-        </div>
-
-        <div class="order-2 order-md-1 px-lg-3" id="unit-info">
-          <h2>MV ICity New Cairo - The North Park- Millennial</h2>
-          <p id="unit-info-details">MV ICity New Cairo - The North Park- Millennial</p>
-          <p id="unit-info-location"><img src="assets/images/unit-details/location-icon.png"/> Mountain View ICity New Cairo, New Cairo, Egypt</p>
-          <p id="unit-info-min-price">Minimum Price</p>
-          <p id="unit-info-price">5,800,000 EGP</p>
-          <div class="d-flex flex-lg-nowrap flex-wrap mb-3 mb-lg-0">
-
-            <div class="blocks col-sm-6 col-12 mb-2 mb-sm-0">
-              <div class="d-lg-flex mb-2 mb-lg-0">
-                <p id="unit-info-payment">Est payment: 40,000 EGP &nbsp;</p>
-                <p id="unit-info-period">Monthly</p>
-              </div>
-              <p id="unit-info-years">Deposit 9 Years</p>
-            </div>
-
-            <div class="blocks col-sm-3 col me-2 mx-sm-3" id="call-us-block">
-              <img src="assets/images/unit-details/callus-icon.png" />
-              <p>Call Us</p>
-            </div>
-
-            <div class="blocks col-sm-3 col" id="whatsapp-block">
-              <img src="assets/images/unit-details/whatsapp-icon.png" />
-              <p>Whatsapp</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="order-1 order-md-2 my-3 my-sm-0">
-          <img src="assets/images/unit-details/fav-icon.png" />
-        </div>
-      </div>
-
-      <div class="d-md-flex justify-content-between" id="unit-details-info-card-container">
-        <div id="imags-container" class="row gx-2">
-          <img src="assets/images/unit-details/building-5.png" width="98%" />
-          <img src="assets/images/unit-details/building-3.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-2.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-1.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-4.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-3.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-2.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-1.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-4.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-3.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-2.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-4.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-3.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-2.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-1.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-4.png" class="col-6 my-1" />
-          <img src="assets/images/unit-details/building-3.png" class="col-6 my-1" />
-    
-        </div>
-        <div id="unit-details-info-container">
-          <h3>Unit Details</h3>
-
-          <div class="info-record">
-            <div class="lbl">
-              Unite Type
-            </div>
-            <div class="value-header">
-              Apartment
-            </div>
-          </div>
-
-          <div class="info-record">
-            <div class="lbl">
-              Size
-            </div>
-            <div class="value">
-              150 M
-            </div>
-          </div>
-
-          <div class="info-record">
-            <div class="lbl">
-              Bedrooms
-            </div>
-            <div class="value">
-              5
-            </div>
-          </div>
-
-          <div class="info-record">
-            <div class="lbl">
-              Bathrooms
-            </div>
-            <div class="value">
-              2
-            </div>
-          </div>
-
-          <div class="info-record">
-            <div class="lbl">
-              Compound
-            </div>
-            <div class="value">
-              Mountain View ICity New Cairo
-            </div>
-          </div>
-
-          <div class="info-record">
-            <div class="lbl">
-              Sale Type
-            </div>
-            <div class="value">
-              Developer Sale
-            </div>
-          </div>
-
-          <div class="info-record">
-            <div class="lbl">
-              Finishing
-            </div>
-            <div class="value">
-              Finished
-            </div>
-          </div>
-
-          <div class="info-record">
-            <div class="lbl">
-              Minimum Price
-            </div>
-            <div class="value">
-              5,800,000 EGP
-            </div>
-          </div>
-
-          <div class="info-record">
-            <div class="lbl">
-              Maximum Price
-            </div>
-            <div class="value">
-              15,300,000 EGP
-            </div>
-          </div>
-
-          <div class="info-record">
-            <div class="lbl">
-              Maximum Price
-            </div>
-            <div class="value">
-              15,300,000 EGP
-            </div>
-          </div>
-
-          <div class="info-record">
-            <div class="lbl">
-              Delivery State
-            </div>
-            <div class="value">
-              Ready to move
-            </div>
-          </div>
-
-          <h3>Amenities</h3>
-          <div class="d-flex justify-content-between mb-4">
-            <div class="col amenities-item">
-
-              <img src="assets/images/unit-details/sport-club.png" />
-              <p>Sports Club</p>
-            </div>
-            <div class="col amenities-item">
-              <img src="assets/images/unit-details/schools.png" />
-              <p>Schools</p>
-            </div>
-            <div class="col amenities-item">
-              <img src="assets/images/unit-details/business.png" />
-              <p>Business Hub</p>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between">
-            <div class="col amenities-item">
-              <img src="assets/images/unit-details/club-house.png" />
-              <p>Club House</p>
-            </div>
-            <div class="col amenities-item">
-              <img src="assets/images/unit-details/bicycle.png" />
-              <p>Bicycles Lanes</p>
-            </div>
-            <div class="col amenities-item">
-              <img src="assets/images/unit-details/commercial.png" />
-              <p>Commercial Strip</p>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between mx-auto mt-5">
-            <div class="col amenities-media">
-              <img src="assets/images/unit-details/video.png" />
-              <p>See Video</p>
-            </div>
-            <div class="col amenities-media">
-              <img src="assets/images/unit-details/planner.png" />
-              <p>Project Planner</p>
-            </div>
-            <div class="col amenities-media">
-              <img src="assets/images/unit-details/map.png" />
-              <p>View on Map</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid" id="unit-details-search-result-outer-container">
-    <div id="unit-details-search-result-inner-container">
-
-      <div class="d-flex flex-wrap justify-content-between align-items-center" id="unit-details-search-result-header">
-
-        <h2 class="col-lg-12 col-7 order-0">Explore Properties In Mountain View ICity New Cairo
-        </h2>
-
-        <ul class="nav nav-pills justify-content-between mb-3 order-2 order-lg-1 col-lg-10" id="search-result-categories" role="tablist">
-          <li class="nav-item widget-cat" role="presentation">
-            <button class="nav-link active" id="pills-apartment-tab" data-bs-toggle="pill" data-bs-target="#pills-apartment" type="button" 
-            role="tab" aria-controls="pills-apartment" aria-selected="true">
-            <div class=" selected">
-              <h3 class="title">Apartment</h3>
-              <p class="number">10</p>
-            </div>
-          </button>
-          </li>
-          <li class="nav-item widget-cat" role="presentation">
-            <button class="nav-link" id="pills-villa-tab" data-bs-toggle="pill" data-bs-target="#pills-villa" type="button" 
-            role="tab" aria-controls="pills-villa" aria-selected="false">
-            <div class="">
-              <h3 class="title">Villa</h3>
-              <p class="number">2</p>
-            </div>
-          </button>
-          </li>
-          <li class="nav-item widget-cat" role="presentation">
-            <button class="nav-link" id="pills-duplex-tab" data-bs-toggle="pill" data-bs-target="#pills-duplex" type="button" 
-            role="tab" aria-controls="pills-duplex" aria-selected="false">
-            <div class="">
-              <h3 class="title">Duplex</h3>
-              <p class="number">15</p>
-            </div>
-          </button>
-          </li>
-          <li class="nav-item widget-cat" role="presentation">
-            <button class="nav-link" id="pills-townhouse-tab" data-bs-toggle="pill" data-bs-target="#pills-townhouse" type="button" 
-            role="tab" aria-controls="pills-townhouse" aria-selected="false">
-            <div class="">
-              <h3 class="title">Townhouse</h3>
-              <p class="number">4</p>
-            </div>
-          </button>
-          </li>
-    
-          <li class="nav-item widget-cat" role="presentation">
-            <button class="nav-link"  id="pills-office-tab" data-bs-toggle="pill" data-bs-target="#pills-office" type="button" 
-            role="tab" aria-controls="pills-office" aria-selected="false">
-            <div class="">
-              <h3 class="title">Office</h3>
-              <p class="number">5</p>
-            </div>
-          </button>
-          </li>
-    
-          <li class="nav-item widget-cat" role="presentation">
-            <button class="nav-link"  id="pills-clinic-tab" data-bs-toggle="pill" data-bs-target="#pills-clinic" type="button" 
-            role="tab" aria-controls="pills-clinic" aria-selected="false">
-            <div class="">
-              <h3 class="title">Clinic</h3>
-              <p class="number">7</p>
-            </div>
-          </button>
-          </li>
-        </ul>
-        <div class="order-1 order-lg-2 dropdown col-5 col-lg-2 text-end">
-          <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuCompound"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Sort By
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuCompound">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div  class="tab-content ">
-
-        <div class="tab-pane fade" id="pills-townhouse" role="tabpanel" aria-labelledby="pills-townhouse-tab">
-          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
-            <div class="mb-3 search-result-item-container">
-              <div class="search-result-item mb-3">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
+                <div class="order-0 my-3 my-sm-0">
+                    <img src="assets/images/unit-details/dmg-logo.png" />
                 </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
+
+                <div class="order-2 order-md-1 px-lg-3" id="unit-info">
+                    <h2>MV ICity New Cairo - The North Park- Millennial</h2>
+                    <p id="unit-info-details">MV ICity New Cairo - The North Park- Millennial</p>
+                    <p id="unit-info-location"><img src="assets/images/unit-details/location-icon.png" /> Mountain View ICity New Cairo, New Cairo, Egypt</p>
+                    <p id="unit-info-min-price">Minimum Price</p>
+                    <p id="unit-info-price">5,800,000 EGP</p>
+                    <div class="d-flex flex-lg-nowrap flex-wrap mb-3 mb-lg-0">
+
+                        <div class="blocks col-sm-6 col-12 mb-2 mb-sm-0">
+                            <div class="d-lg-flex mb-2 mb-lg-0">
+                                <p id="unit-info-payment">Est payment: 40,000 EGP &nbsp;</p>
+                                <p id="unit-info-period">Monthly</p>
+                            </div>
+                            <p id="unit-info-years">Deposit 9 Years</p>
+                        </div>
+
+                        <div class="blocks col-sm-3 col me-2 mx-sm-3" id="call-us-block">
+                            <img src="assets/images/unit-details/callus-icon.png" />
+                            <p>Call Us</p>
+                        </div>
+
+                        <div class="blocks col-sm-3 col" id="whatsapp-block">
+                            <img src="assets/images/unit-details/whatsapp-icon.png" />
+                            <p>Whatsapp</p>
+                        </div>
+
+                    </div>
                 </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
+
+                <div class="order-1 order-md-2 my-3 my-sm-0">
+                    <img src="assets/images/unit-details/fav-icon.png" />
+                </div>
             </div>
 
-          </div>
-        </div>
+            <div class="d-md-flex justify-content-between" id="unit-details-info-card-container">
+                <div id="imags-container" class="row gx-2">
+                    <a class="example-image-link" href="assets/images/unit-details/building-5.png"
+                       data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                        <img src="assets/images/unit-details/building-5.png" width="100%" />
+                    </a>
 
-        <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
-          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
-            <div class="mb-3 search-result-item-container ">
-              <div class="search-result-item mb-3">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
-        
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
 
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="tab-pane fade " id="pills-clinic" role="tabpanel" aria-labelledby="pills-clinic-tab">
-          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item mb-3">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
-        
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
+                    <a class="col-6 my-1" href="assets/images/unit-details/building-3.png"
+                       data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                        <img src="assets/images/unit-details/building-3.png" />
+                    </a>
+                    <a class="col-6 my-1" href="assets/images/unit-details/building-2.png"
+                       data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                        <img src="assets/images/unit-details/building-2.png" />
+                    </a>
+                    <a class="col-6 my-1" href="assets/images/unit-details/building-5.jpg"
+                       data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                        <img src="assets/images/unit-details/building-5.jpg" width="100%" />
+                    </a>
+                    <a class="col-6 my-1" href="assets/images/unit-details/building-3.png"
+                       data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                        <img src="assets/images/unit-details/building-3.png" />
+                    </a>
+                    <a class="col-6 my-1" href="assets/images/unit-details/building-2.png"
+                       data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                        <img src="assets/images/unit-details/building-2.png" />
+                    </a>
+                    <a class="col-6 my-1" href="assets/images/unit-details/building-5.jpg"
+                       data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                        <img src="assets/images/unit-details/building-5.jpg" width="100%" />
+                    </a>
 
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
 
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
                 </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
+                <div id="unit-details-info-container">
+                    <h3>Unit Details</h3>
 
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
-          </div>
-        </div>
+                    <div class="info-record">
+                        <div class="lbl">
+                            Unite Type
+                        </div>
+                        <div class="value-header">
+                            Apartment
+                        </div>
+                    </div>
 
-        <div class="tab-pane fade" id="pills-duplex" role="tabpanel" aria-labelledby="pills-duplex-tab">
-          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+                    <div class="info-record">
+                        <div class="lbl">
+                            Size
+                        </div>
+                        <div class="value">
+                            150 M
+                        </div>
+                    </div>
 
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item mb-3">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
-        
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
-          
-          </div>
-        </div>
+                    <div class="info-record">
+                        <div class="lbl">
+                            Bedrooms
+                        </div>
+                        <div class="value">
+                            5
+                        </div>
+                    </div>
 
-        <div class="tab-pane fade show active" id="pills-apartment" role="tabpanel" aria-labelledby="pills-apartment-tab">
-          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item mb-3">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
-        
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
+                    <div class="info-record">
+                        <div class="lbl">
+                            Bathrooms
+                        </div>
+                        <div class="value">
+                            2
+                        </div>
+                    </div>
 
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
+                    <div class="info-record">
+                        <div class="lbl">
+                            Compound
+                        </div>
+                        <div class="value">
+                            Mountain View ICity New Cairo
+                        </div>
+                    </div>
+
+                    <div class="info-record">
+                        <div class="lbl">
+                            Sale Type
+                        </div>
+                        <div class="value">
+                            Developer Sale
+                        </div>
+                    </div>
+
+                    <div class="info-record">
+                        <div class="lbl">
+                            Finishing
+                        </div>
+                        <div class="value">
+                            Finished
+                        </div>
+                    </div>
+
+                    <div class="info-record">
+                        <div class="lbl">
+                            Minimum Price
+                        </div>
+                        <div class="value">
+                            5,800,000 EGP
+                        </div>
+                    </div>
+
+                    <div class="info-record">
+                        <div class="lbl">
+                            Maximum Price
+                        </div>
+                        <div class="value">
+                            15,300,000 EGP
+                        </div>
+                    </div>
+
+                    <div class="info-record">
+                        <div class="lbl">
+                            Maximum Price
+                        </div>
+                        <div class="value">
+                            15,300,000 EGP
+                        </div>
+                    </div>
+
+                    <div class="info-record">
+                        <div class="lbl">
+                            Delivery State
+                        </div>
+                        <div class="value">
+                            Ready to move
+                        </div>
+                    </div>
+
+                    <h3>Amenities</h3>
+                    <div class="d-flex justify-content-between mb-4">
+                        <div class="col amenities-item">
+
+                            <img src="assets/images/unit-details/sport-club.png" />
+                            <p>Sports Club</p>
+                        </div>
+                        <div class="col amenities-item">
+                            <img src="assets/images/unit-details/schools.png" />
+                            <p>Schools</p>
+                        </div>
+                        <div class="col amenities-item">
+                            <img src="assets/images/unit-details/business.png" />
+                            <p>Business Hub</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="col amenities-item">
+                            <img src="assets/images/unit-details/club-house.png" />
+                            <p>Club House</p>
+                        </div>
+                        <div class="col amenities-item">
+                            <img src="assets/images/unit-details/bicycle.png" />
+                            <p>Bicycles Lanes</p>
+                        </div>
+                        <div class="col amenities-item">
+                            <img src="assets/images/unit-details/commercial.png" />
+                            <p>Commercial Strip</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mx-auto mt-5">
+                        <div class="col amenities-media">
+                            <img src="assets/images/unit-details/video.png" />
+                            <p>See Video</p>
+                        </div>
+                        <div class="col amenities-media">
+                            <img src="assets/images/unit-details/planner.png" />
+                            <p>Project Planner</p>
+                        </div>
+                        <div class="col amenities-media">
+                            <img src="assets/images/unit-details/map.png" />
+                            <p>View on Map</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
             </div>
-
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tab-pane fade" id="pills-villa" role="tabpanel" aria-labelledby="pills-villa-tab">
-        
-          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
-
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item mb-3">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
-
-            <div class="mb-3 search-result-item-container ms-sm-1">
-              <div class="search-result-item">
-                  <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                <div class="badge-top d-flex align-items-center justify-content-between">
-                  <div class="status">
-                    <img src="assets/images/landing-page/ph_house.png">
-                    Sold
-                  </div>
-                  <div class="location">
-                    6th of October City
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between w-100 badge-bottom">
-                  <div class="price">
-                    5,800,000 EGP
-                  </div>
-                  <div class="contact d-flex justify-content-between">
-                    <img src="assets/images/landing-page/phone.png">
-                    <img src="assets/images/landing-page/whatsapp-icon.png">
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between beds">
-                <p>5 Beds 5 Baths 5090 SqFt</p>
-                <img src="assets/images/landing-page/heart.png">
-              </div>
-            </div>
-
-          </div>
         </div>
     </div>
 
-    </div>
-  </div>
+    <div class="container-fluid" id="unit-details-search-result-outer-container">
+        <div id="unit-details-search-result-inner-container">
 
-  <div class="container-fluid" id="unit-details-desc-outer-container">
-    <div id="unit-details-desc-inner-container">
-      <h2>About Mountain View ICity New Cairo</h2>
-      <p class="header">Mountain View Icity New Cairo Location</p>
-      <p class="desc">Established on 500 acres of land in the heart of New Cairo, Mountain View Icity is located only
-        fifteen minutes away from the American University in Cairo campus. With easy access to the Suez road and Thawra
-        street. The compound is also in close proximity to Mountain View I and Mountain View II compounds.</p>
+            <div class="d-flex flex-wrap justify-content-between align-items-center" id="unit-details-search-result-header">
 
-      <p class="header mt-sm-3">Property Types in Mountain View Icity</p>
-      <p class="desc">There is a wide variety of properties available in Icity New Cairo, from lofts and apartments to
-        standalone villas and palaces.The famous iApartments have the benefits of a villa including access to gardens,
-        rooftops and underground storages. Overall, the properties in Mountain View Icity New Cairo have built up areas
-        ranging from 95 to 565 square meters. All properties will be ready for delivery after 4 years from the contract
-        date, keeping in mind that they have an 8 year payment plan with only 10% as a down payment.</p>
+                <h2 class="col-lg-12 col-7 order-0">
+                    Explore Properties In Mountain View ICity New Cairo
+                </h2>
 
-    </div>
-  </div>
+                <ul class="nav nav-pills justify-content-between mb-3 order-2 order-lg-1 col-lg-10" id="search-result-categories" role="tablist">
+                    <li class="nav-item widget-cat" role="presentation">
+                        <button class="nav-link active" id="pills-apartment-tab" data-bs-toggle="pill" data-bs-target="#pills-apartment" type="button"
+                                role="tab" aria-controls="pills-apartment" aria-selected="true">
+                            <div class=" selected">
+                                <h3 class="title">Apartment</h3>
+                                <p class="number">10</p>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item widget-cat" role="presentation">
+                        <button class="nav-link" id="pills-villa-tab" data-bs-toggle="pill" data-bs-target="#pills-villa" type="button"
+                                role="tab" aria-controls="pills-villa" aria-selected="false">
+                            <div class="">
+                                <h3 class="title">Villa</h3>
+                                <p class="number">2</p>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item widget-cat" role="presentation">
+                        <button class="nav-link" id="pills-duplex-tab" data-bs-toggle="pill" data-bs-target="#pills-duplex" type="button"
+                                role="tab" aria-controls="pills-duplex" aria-selected="false">
+                            <div class="">
+                                <h3 class="title">Duplex</h3>
+                                <p class="number">15</p>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item widget-cat" role="presentation">
+                        <button class="nav-link" id="pills-townhouse-tab" data-bs-toggle="pill" data-bs-target="#pills-townhouse" type="button"
+                                role="tab" aria-controls="pills-townhouse" aria-selected="false">
+                            <div class="">
+                                <h3 class="title">Townhouse</h3>
+                                <p class="number">4</p>
+                            </div>
+                        </button>
+                    </li>
 
-  <div class="container-fluid" id="unit-details-suggested-outer-container">
-    <div id="unit-details-suggested-inner-container">
-      <div class="d-flex justify-content-between align-items-center">
-        <h2>Suggested For You</h2>
-        <div>
-            <a class="" href="#recipeCarousel" role="button" data-bs-slide="prev">
-                <img src="assets/images/unit-details/left-arrow.png" />
-            </a>
-            <a class="" href="#recipeCarousel" role="button" data-bs-slide="next">
-                <img src="assets/images/unit-details/right-arrow.png" />
-            </a>
-        </div>
-      </div>
-     <div  id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-         <div class="carousel-inner" role="listbox">
+                    <li class="nav-item widget-cat" role="presentation">
+                        <button class="nav-link" id="pills-office-tab" data-bs-toggle="pill" data-bs-target="#pills-office" type="button"
+                                role="tab" aria-controls="pills-office" aria-selected="false">
+                            <div class="">
+                                <h3 class="title">Office</h3>
+                                <p class="number">5</p>
+                            </div>
+                        </button>
+                    </li>
 
-             <div class="carousel-item active">
-                 <div class="mb-3 search-result-item-container  ms-sm-1">
-                     <div class="search-result-item">
-                         <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                         <div class="badge-top d-flex align-items-center justify-content-between">
-                             <div class="status">
-                                 <img src="assets/images/landing-page/ph_house.png">
-                                 Sold
-                             </div>
-                             <div class="location">
-                                 6th of October City
-                             </div>
-                         </div>
-                         <div class="d-flex justify-content-between w-100 badge-bottom">
-                             <div class="price">
-                                 5,800,000 EGP
-                             </div>
-                             <div class="contact d-flex justify-content-between">
-                                 <img src="assets/images/landing-page/phone.png">
-                                 <img src="assets/images/landing-page/whatsapp-icon.png">
-                             </div>
-                         </div>
-                     </div>
-                     <div class="d-flex justify-content-between beds">
-                         <p>5 Beds 5 Baths 5090 SqFt</p>
-                         <img src="assets/images/landing-page/heart.png">
-                     </div>
-                 </div>
-             </div>
+                    <li class="nav-item widget-cat" role="presentation">
+                        <button class="nav-link" id="pills-clinic-tab" data-bs-toggle="pill" data-bs-target="#pills-clinic" type="button"
+                                role="tab" aria-controls="pills-clinic" aria-selected="false">
+                            <div class="">
+                                <h3 class="title">Clinic</h3>
+                                <p class="number">7</p>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+                <div class="order-1 order-lg-2 dropdown col-5 col-lg-2 text-end">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuCompound"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        Sort By
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuCompound">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
 
-             <div class="carousel-item">
-                 <div class="mb-3 search-result-item-container  ms-sm-1">
-                     <div class="search-result-item">
-                         <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                         <div class="badge-top d-flex align-items-center justify-content-between">
-                             <div class="status">
-                                 <img src="assets/images/landing-page/ph_house.png">
-                                 Sold
-                             </div>
-                             <div class="location">
-                                 6th of October City
-                             </div>
-                         </div>
-                         <div class="d-flex justify-content-between w-100 badge-bottom">
-                             <div class="price">
-                                 5,800,000 EGP
-                             </div>
-                             <div class="contact d-flex justify-content-between">
-                                 <img src="assets/images/landing-page/phone.png">
-                                 <img src="assets/images/landing-page/whatsapp-icon.png">
-                             </div>
-                         </div>
-                     </div>
-                     <div class="d-flex justify-content-between beds">
-                         <p>5 Beds 5 Baths 5090 SqFt</p>
-                         <img src="assets/images/landing-page/heart.png">
-                     </div>
-                 </div>
-             </div>
-
-             <div class="carousel-item">
-                 <div class="mb-3 search-result-item-container ms-sm-1">
-                     <div class="search-result-item">
-                         <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                         <div class="badge-top d-flex align-items-center justify-content-between">
-                             <div class="status">
-                                 <img src="assets/images/landing-page/ph_house.png">
-                                 Sold
-                             </div>
-                             <div class="location">
-                                 6th of October City
-                             </div>
-                         </div>
-                         <div class="d-flex justify-content-between w-100 badge-bottom">
-                             <div class="price">
-                                 5,800,000 EGP
-                             </div>
-                             <div class="contact d-flex justify-content-between">
-                                 <img src="assets/images/landing-page/phone.png">
-                                 <img src="assets/images/landing-page/whatsapp-icon.png">
-                             </div>
-                         </div>
-                     </div>
-                     <div class="d-flex justify-content-between beds">
-                         <p>5 Beds 5 Baths 5090 SqFt</p>
-                         <img src="assets/images/landing-page/heart.png">
-                     </div>
-                 </div>
-             </div>
-
-             <div class="carousel-item">
-                 <div class="mb-3 search-result-item-container ms-sm-1">
-                     <div class="search-result-item">
-                         <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                         <div class="badge-top d-flex align-items-center justify-content-between">
-                             <div class="status">
-                                 <img src="assets/images/landing-page/ph_house.png">
-                                 Sold
-                             </div>
-                             <div class="location">
-                                 6th of October City
-                             </div>
-                         </div>
-                         <div class="d-flex justify-content-between w-100 badge-bottom">
-                             <div class="price">
-                                 5,800,000 EGP
-                             </div>
-                             <div class="contact d-flex justify-content-between">
-                                 <img src="assets/images/landing-page/phone.png">
-                                 <img src="assets/images/landing-page/whatsapp-icon.png">
-                             </div>
-                         </div>
-                     </div>
-                     <div class="d-flex justify-content-between beds">
-                         <p>5 Beds 5 Baths 5090 SqFt</p>
-                         <img src="assets/images/landing-page/heart.png">
-                     </div>
-                 </div>
-             </div>
-
-             <div class="carousel-item">
-                 <div class="mb-3 search-result-item-container ms-sm-1">
-                     <div class="search-result-item">
-                         <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                         <div class="badge-top d-flex align-items-center justify-content-between">
-                             <div class="status">
-                                 <img src="assets/images/landing-page/ph_house.png">
-                                 Sold
-                             </div>
-                             <div class="location">
-                                 6th of October City
-                             </div>
-                         </div>
-                         <div class="d-flex justify-content-between w-100 badge-bottom">
-                             <div class="price">
-                                 5,800,000 EGP
-                             </div>
-                             <div class="contact d-flex justify-content-between">
-                                 <img src="assets/images/landing-page/phone.png">
-                                 <img src="assets/images/landing-page/whatsapp-icon.png">
-                             </div>
-                         </div>
-                     </div>
-                     <div class="d-flex justify-content-between beds">
-                         <p>5 Beds 5 Baths 5090 SqFt</p>
-                         <img src="assets/images/landing-page/heart.png">
-                     </div>
-                 </div>
-             </div>
-
-             <div class="carousel-item">
-                 <div class="mb-3 search-result-item-container ms-sm-1">
-                     <div class="search-result-item">
-                         <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                         <div class="badge-top d-flex align-items-center justify-content-between">
-                             <div class="status">
-                                 <img src="assets/images/landing-page/ph_house.png">
-                                 Sold
-                             </div>
-                             <div class="location">
-                                 6th of October City
-                             </div>
-                         </div>
-                         <div class="d-flex justify-content-between w-100 badge-bottom">
-                             <div class="price">
-                                 5,800,000 EGP
-                             </div>
-                             <div class="contact d-flex justify-content-between">
-                                 <img src="assets/images/landing-page/phone.png">
-                                 <img src="assets/images/landing-page/whatsapp-icon.png">
-                             </div>
-                         </div>
-                     </div>
-                     <div class="d-flex justify-content-between beds">
-                         <p>5 Beds 5 Baths 5090 SqFt</p>
-                         <img src="assets/images/landing-page/heart.png">
-                     </div>
-                 </div>
-             </div>
-
-             <div class="carousel-item">
-                 <div class="mb-3 search-result-item-container ms-sm-1">
-                     <div class="search-result-item">
-                         <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                         <div class="badge-top d-flex align-items-center justify-content-between">
-                             <div class="status">
-                                 <img src="assets/images/landing-page/ph_house.png">
-                                 Sold
-                             </div>
-                             <div class="location">
-                                 6th of October City
-                             </div>
-                         </div>
-                         <div class="d-flex justify-content-between w-100 badge-bottom">
-                             <div class="price">
-                                 5,800,000 EGP
-                             </div>
-                             <div class="contact d-flex justify-content-between">
-                                 <img src="assets/images/landing-page/phone.png">
-                                 <img src="assets/images/landing-page/whatsapp-icon.png">
-                             </div>
-                         </div>
-                     </div>
-                     <div class="d-flex justify-content-between beds">
-                         <p>5 Beds 5 Baths 5090 SqFt</p>
-                         <img src="assets/images/landing-page/heart.png">
-                     </div>
-                 </div>
-             </div>
-
-             <div class="carousel-item">
-                 <div class="mb-3 search-result-item-container ms-sm-1">
-                     <div class="search-result-item">
-                         <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
-                         <div class="badge-top d-flex align-items-center justify-content-between">
-                             <div class="status">
-                                 <img src="assets/images/landing-page/ph_house.png">
-                                 Sold
-                             </div>
-                             <div class="location">
-                                 6th of October City
-                             </div>
-                         </div>
-                         <div class="d-flex justify-content-between w-100 badge-bottom">
-                             <div class="price">
-                                 5,800,000 EGP
-                             </div>
-                             <div class="contact d-flex justify-content-between">
-                                 <img src="assets/images/landing-page/phone.png">
-                                 <img src="assets/images/landing-page/whatsapp-icon.png">
-                             </div>
-                         </div>
-                     </div>
-                     <div class="d-flex justify-content-between beds">
-                         <p>5 Beds 5 Baths 5090 SqFt</p>
-                         <img src="assets/images/landing-page/heart.png">
-                     </div>
-                 </div>
-             </div>
-          
-         </div>
-     </div>
-              
-    </div>
-  </div>
-
-
-
-  <!-- Footer -->
-  <div id="footer">
-    <footer class="p-sm-3 p-3 p-md-5">
-      <div class="row">
-        <div class="col-sm-3 mb-3 col-lg-2">
-          <img id="logo-footer" src="assets/images/logo/map-logo-white.png">
-          </ul>
-        </div>
-        <div class="col-sm-3 col-4 col-lg-2">
-          <h5>Company</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">For Employers</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Success Stories</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Careers</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="col-sm-3 col-4 col-lg-2">
-          <h5>Locations</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Location 1</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Location 2</a></li>
-          </ul>
-          <h5>Popular Links</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Browse Jobs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Browse Companies</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">MAP Real Estate</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Real Estate</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Dream Jobs Events</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Podcasts</a></li>
-          </ul>
-        </div>
-
-        <div class="col-sm-3 col-4 col-lg-2">
-          <h5>Our Offices
-          </h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 mb-lg-4"><b class="header-location">New Cairo</b>
-                <br>New Cairo, Egypt.
-              </a></li>
-            <li class="nav-item mb-2 mt-lg-5"><a href="#" class="nav-link p-0 "><b class="header-location">6th of
-                  October</b><br>
-                6th of October City, Egypt . </a></li>
-          </ul>
-        </div>
-
-        <div class="col-sm-12 col-12 col-lg-4">
-          <div id="follow-us">
-            <h5>Follow Us
-            </h5>
-            <div>
-              <a class="social-icon-link"> <img src="assets/images/footer/Linkedin.png"></a>
-              <a class="social-icon-link"> <img src="assets/images/footer/Instagram.png"></a>
-              <a class="social-icon-link"> <img src="assets/images/footer/Facebook.png"></a>
-              <a class="social-icon-link"> <img src="assets/images/footer/Twitter.png"></a>
-              <a class="social-icon-link"> <img src="assets/images/footer/Vector.png"></a>
-              <a class="social-icon-link"> <img src="assets/images/footer/youtube.png"></a>
             </div>
-          </div>
-          <form id="footer-form">
-            <h5>Be in the know</h5>
-            <p class="nav-link mb-2">Members receive notifications early</p>
-            <div class="d-flex w-100 gap-2">
-              <label for="newsletter" class="visually-hidden">Email</label>
-              <input id="newsletter" type="text" class="form-control" placeholder="Email">
-              <button class="btn" type="button">Sign Up Now</button>
+
+            <div class="tab-content ">
+
+                <div class="tab-pane fade" id="pills-townhouse" role="tabpanel" aria-labelledby="pills-townhouse-tab">
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+                        <div class="mb-3 search-result-item-container">
+                            <div class="search-result-item mb-3">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+                        <div class="mb-3 search-result-item-container ">
+                            <div class="search-result-item mb-3">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade " id="pills-clinic" role="tabpanel" aria-labelledby="pills-clinic-tab">
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item mb-3">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-duplex" role="tabpanel" aria-labelledby="pills-duplex-tab">
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item mb-3">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show active" id="pills-apartment" role="tabpanel" aria-labelledby="pills-apartment-tab">
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item mb-3">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-villa" role="tabpanel" aria-labelledby="pills-villa-tab">
+
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item mb-3">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-          </form>
+
         </div>
-      </div>
+    </div>
 
-      <div class="d-flex justify-content-between py-4 my-4 border-top footer-bottom">
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="nav-link" href="#">Term of Use</a></li>
-          <li class="ms-3"><a class="nav-link" href="#">Privacy Statement</a></li>
-        </ul>
-        <p>© 2021 Company, Inc. All rights reserved.</p>
-      </div>
-    </footer>
-  </div>
-  <!-- Footer -->
-  <script src="assets/js/script.js"></script>
+    <div class="container-fluid" id="unit-details-desc-outer-container">
+        <div id="unit-details-desc-inner-container">
+            <h2>About Mountain View ICity New Cairo</h2>
+            <p class="header">Mountain View Icity New Cairo Location</p>
+            <p class="desc">
+                Established on 500 acres of land in the heart of New Cairo, Mountain View Icity is located only
+                fifteen minutes away from the American University in Cairo campus. With easy access to the Suez road and Thawra
+                street. The compound is also in close proximity to Mountain View I and Mountain View II compounds.
+            </p>
 
+            <p class="header mt-sm-3">Property Types in Mountain View Icity</p>
+            <p class="desc">
+                There is a wide variety of properties available in Icity New Cairo, from lofts and apartments to
+                standalone villas and palaces.The famous iApartments have the benefits of a villa including access to gardens,
+                rooftops and underground storages. Overall, the properties in Mountain View Icity New Cairo have built up areas
+                ranging from 95 to 565 square meters. All properties will be ready for delivery after 4 years from the contract
+                date, keeping in mind that they have an 8 year payment plan with only 10% as a down payment.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="container-fluid" id="unit-details-suggested-outer-container">
+        <div id="unit-details-suggested-inner-container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Suggested For You</h2>
+                <div>
+                    <a class="" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <img src="assets/images/unit-details/left-arrow.png" />
+                    </a>
+                    <a class="" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <img src="assets/images/unit-details/right-arrow.png" />
+                    </a>
+                </div>
+            </div>
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="carousel-item active">
+                        <div class="mb-3 search-result-item-container  ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="mb-3 search-result-item-container  ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="mb-3 search-result-item-container ms-sm-1">
+                            <div class="search-result-item">
+                                <img class="search-result-item-bg-img" src="assets/images/landing-page/building.jpeg" />
+                                <div class="badge-top d-flex align-items-center justify-content-between">
+                                    <div class="status">
+                                        <img src="assets/images/landing-page/ph_house.png">
+                                        Sold
+                                    </div>
+                                    <div class="location">
+                                        6th of October City
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 badge-bottom">
+                                    <div class="price">
+                                        5,800,000 EGP
+                                    </div>
+                                    <div class="contact d-flex justify-content-between">
+                                        <img src="assets/images/landing-page/phone.png">
+                                        <img src="assets/images/landing-page/whatsapp-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between beds">
+                                <p>5 Beds 5 Baths 5090 SqFt</p>
+                                <img src="assets/images/landing-page/heart.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div id="footer">
+        <footer class="p-sm-3 p-3 p-md-5">
+            <div class="row">
+                <div class="col-sm-3 mb-3 col-lg-2">
+                    <img id="logo-footer" src="assets/images/logo/map-logo-white.png">
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-4 col-lg-2">
+                    <h5>Company</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">For Employers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Success Stories</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Careers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 col-4 col-lg-2">
+                    <h5>Locations</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Location 1</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Location 2</a></li>
+                    </ul>
+                    <h5>Popular Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Browse Jobs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Browse Companies</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">MAP Real Estate</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Real Estate</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Dream Jobs Events</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Podcasts</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 col-4 col-lg-2">
+                    <h5>
+                        Our Offices
+                    </h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 mb-lg-4">
+                                <b class="header-location">New Cairo</b>
+                                <br>New Cairo, Egypt.
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2 mt-lg-5">
+                            <a href="#" class="nav-link p-0 ">
+                                <b class="header-location">
+                                    6th of
+                                    October
+                                </b><br>
+                                6th of October City, Egypt .
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-12 col-lg-4">
+                    <div id="follow-us">
+                        <h5>
+                            Follow Us
+                        </h5>
+                        <div>
+                            <a class="social-icon-link"> <img src="assets/images/footer/Linkedin.png"></a>
+                            <a class="social-icon-link"> <img src="assets/images/footer/Instagram.png"></a>
+                            <a class="social-icon-link"> <img src="assets/images/footer/Facebook.png"></a>
+                            <a class="social-icon-link"> <img src="assets/images/footer/Twitter.png"></a>
+                            <a class="social-icon-link"> <img src="assets/images/footer/Vector.png"></a>
+                            <a class="social-icon-link"> <img src="assets/images/footer/youtube.png"></a>
+                        </div>
+                    </div>
+                    <form id="footer-form">
+                        <h5>Be in the know</h5>
+                        <p class="nav-link mb-2">Members receive notifications early</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter" class="visually-hidden">Email</label>
+                            <input id="newsletter" type="text" class="form-control" placeholder="Email">
+                            <button class="btn" type="button">Sign Up Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between py-4 my-4 border-top footer-bottom">
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="nav-link" href="#">Term of Use</a></li>
+                    <li class="ms-3"><a class="nav-link" href="#">Privacy Statement</a></li>
+                </ul>
+                <p>© 2021 Company, Inc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Footer -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>

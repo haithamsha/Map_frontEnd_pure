@@ -147,8 +147,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .search-result-item .badge-top {
-    margin-bottom: 212px;
+    margin-bottom: 15px;
 }
+.search-result-item .badge-second-top {
+    margin-bottom: 165px;
+}
+
 
 .search-result-item .badge-top,
 .search-result-item .badge-bottom {
@@ -158,23 +162,33 @@ input[type=number]::-webkit-outer-spin-button {
 .search-result-item .badge-bottom {
     bottom: 15px;
 }
-
-    .search-result-item .badge-top,
-    .search-result-item .badge-bottom .price,
-    .search-result-item .badge-bottom .contact {
-        background-color: var(--light-blue);
-        border-radius: 5px;
-        height: 30px;
-        padding: 3px;
-        position: relative;
+    .search-result-item .badge-second-top .delivery-date{
+        width:fit-content;
     }
-
-.search-result-item .badge-bottom .price {
-    font-size: 18px;
-    font-family: Inter;
-    font-weight: 500;
-    color: rgba(106, 101, 101, 1);
+.search-result-item .badge-second-top .company a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blue);
 }
+.search-result-item .badge-top,
+.search-result-item .badge-second-top .delivery-date,
+.search-result-item .badge-second-top .company,
+.search-result-item .badge-bottom .price,
+.search-result-item .badge-bottom .contact {
+    background-color: var(--light-blue);
+    border-radius: 5px;
+    height: 30px;
+    padding: 3px;
+    position: relative;
+}
+
+        .search-result-item .badge-bottom .price,
+        .search-result-item .badge-second-top .delivery-date {
+            font-size: 18px;
+            font-family: Inter;
+            font-weight: 500;
+            color: rgba(106, 101, 101, 1);
+        }
 
 .search-result-item .badge-bottom .contact {
     width: 55px;
